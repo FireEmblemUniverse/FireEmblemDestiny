@@ -11,7 +11,7 @@ ORG WeaponIconOffset(SteelKatanaIcon)
 ORG WeaponIconOffset(SilverKatanaIcon)
 #incext Png2Dmp "Weapon Icons/Katana/SilverKatana.png"
 ORG WeaponIconOffset(IronSwordIcon)
-#incext Png2Dmp "Weapon Icons/IronSword.png"
+#incbin Png2Dmp "Weapon Icons/Iron Sword.dmp"
 
 ORG WeaponIconOffset(BrassNaginataIcon)
 #incext Png2Dmp "Weapon Icons/Naginata/BrassNaginata.png"
