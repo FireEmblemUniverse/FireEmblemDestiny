@@ -1,0 +1,54 @@
+#include "Tools/Tool Helpers.txt"
+//setMugEntry(number, data, mouth_x, mouth_y, eye_x, eye_y)
+
+setMugEntry(Arch_Mug, Arch_MugData, 0x03, 0x05, 0x03, 0x03)
+setMugEntry(Ash_Mug, Ash_MugData, 0x03, 0x06, 0x03, 0x04)
+setMugEntry(Colorz_Mug, Colorz_MugData, 0x03, 0x06, 0x03, 0x04)
+setMugEntry(Zim_Mug, Zim_MugData, 0x03, 0x05, 0x03, 0x03)
+setMugEntry(Ghast_Mug, Ghast_MugData, 0x03, 0x07, 0x03, 0x04)
+
+setMugEntry(Batta_Mug, Batta_MugData, 0x02, 0x05, 0x03, 0x03)
+setMugEntry(Damas_Mug, Damas_MugData, 0x02, 0x05, 0x02, 0x03)
+setMugEntry(Gazga_Mug, Gazga_MugData, 0x03, 0x05, 0x03, 0x03)
+
+setMugEntry(ForestGuy_Mug, ForestGuy_MugData, 0x02, 0x05, 0x02, 0x03)
+setMugEntry(Priestess1_Mug, Priestess1_MugData, 0x04, 0x06, 0x03, 0x04)
+setMugEntry(Priestess2_Mug, Priestess2_MugData, 0x02, 0x06, 0x03, 0x04)
+
+ALIGN 4
+//Allies
+Arch_MugData:
+#incext PortraitFormatter "Self mugs/Arch.png"
+
+Ash_MugData:
+#incext PortraitFormatter "Mugs/Ashley FE8 Style.png"
+
+Colorz_MugData:
+#incext PortraitFormatter "Mugs/Colorz.png"
+
+Zim_MugData:
+#incext PortraitFormatter "Mugs/Femzim.png"
+
+Ghast_MugData:
+#incext PortraitFormatter "Mugs/Ghast.png"
+
+
+//Bosses
+Batta_MugData:
+#incext PortraitFormatter "Mugs/Batta- FE8.png"
+
+Damas_MugData:
+#incext PortraitFormatter "Mugs/Damas- FE8.png"
+
+Gazga_MugData:
+#incext PortraitFormatter "Mugs/Gazga.png"
+
+//NPCs
+ForestGuy_MugData:
+#incext PortraitFormatter "Mugs/Forest Guy FE8.png"
+
+Priestess1_MugData:
+#incext PortraitFormatter "Mugs/VirginDragonPriestess1.png"
+
+Priestess2_MugData:
+#incext PortraitFormatter "Mugs/VirginDragonPriestess2.png"

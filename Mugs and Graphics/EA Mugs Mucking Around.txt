@@ -1,0 +1,23 @@
+#define MugTable 0x8ACBC4
+#define normalBlinking 0x01
+#define alwaysClosed 0x06
+
+#define setMugEntryFromFEditor(mugEntry, mugLocation, feditorHeader1, feditorHeader2, feditorHeader3, feditorHeader4, feditorHeader5, mouthX, mouthY, eyeX, eyeY, eyeControl) "ORG MugTable+mugEntry*0x1C; POIN mugLocation; POIN mugLocation + (feditorHeader2 - feditorHeader1); POIN mugLocation + (feditorHeader3 - feditorHeader1); POIN mugLocation + (feditorHeader4 - feditorHeader1); WORD 0x00000000; BYTE mouthX mouthY eyeX eyeY"
+//Doesn't yet do generics, so ignores the 5th header parameter (pointer to class card)
+
+setMugEntryFromFEditor(0x01, Arch_Mug_Data, 0x08B2A610, 0x08B2BC34, 0x08B2BC14, 0x08B2B614, 0x00000000, 0x03, 0x05, 0x03, 0x03, 0x01)
+setMugEntryFromFEditor(0x04, Ash_Mug_Data, 0x08B2A610, 0x08B2BC80, 0x08B2BC14, 0x08B2B614, 0x00000000, 0x03, 0x06, 0x03, 0x04, 0x01)
+setMugEntryFromFEditor(0x05, Colorz_Mug_Data, 0x08B2A610, 0x08B2B614, 0x08B2BDB4, 0x08B2B7B4, 0x00000000, 0x03, 0x06, 0x03, 0x04, 0x01)
+
+setMugEntryFromFEditor(0x3A, Gazga_Mug_Data, 0x08B2A610, 0x08B2BC80, 0x08B2BC14, 0x08B2B614, 0x00000000, 0x03, 0x05, 0x03, 0x03, 0x01)
+
+ORG 0xF00000
+Arch_Mug_Data:
+#incbin "Arch Mug.dmp"
+Ash_Mug_Data:
+#incbin "Ash Mug.dmp"
+Colorz_Mug_Data:
+#incbin "Colorz Mug.dmp"
+
+Gazga_Mug_Data:
+#incbin "Gazga Mug.dmp"

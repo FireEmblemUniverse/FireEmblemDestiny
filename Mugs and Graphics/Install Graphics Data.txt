@@ -1,0 +1,97 @@
+#define WeaponIconOffset(iconID) "0x5926F4 + 0x80*iconID"
+
+PUSH
+//In place, so no need to go to data.
+ORG WeaponIconOffset(BrassKatanaIcon)
+#incbin "Weapon Icons/Katana/Brass Katana.dmp"
+ORG WeaponIconOffset(IronKatanaIcon)
+#incbin "Weapon Icons/Katana/Iron Katana.dmp"
+ORG WeaponIconOffset(SteelKatanaIcon)
+#incbin "Weapon Icons/Katana/Steel Katana.dmp"
+ORG WeaponIconOffset(SilverKatanaIcon)
+#incbin "Weapon Icons/Katana/Silver Katana.dmp"
+ORG WeaponIconOffset(IronSwordIcon)
+#incbin "Weapon Icons/Iron Sword.dmp"
+
+ORG WeaponIconOffset(BrassNaginataIcon)
+#incbin "Weapon Icons/Naginata/Brass Naginata.dmp"
+ORG WeaponIconOffset(IronNaginataIcon)
+#incbin "Weapon Icons/Naginata/Iron Naginata.dmp"
+ORG WeaponIconOffset(SteelNaginataIcon)
+#incbin "Weapon Icons/Naginata/Steel Naginata.dmp"
+ORG WeaponIconOffset(SilverNaginataIcon)
+#incbin "Weapon Icons/Naginata/Silver Naginata.dmp"
+
+ORG WeaponIconOffset(BrassClubIcon)
+#incbin "Weapon Icons/Club/Brass Club.dmp"
+ORG WeaponIconOffset(IronClubIcon)
+#incbin "Weapon Icons/Club/Iron Club.dmp"
+ORG WeaponIconOffset(SteelClubIcon)
+#incbin "Weapon Icons/Club/Steel Club.dmp"
+ORG WeaponIconOffset(SilverClubIcon)
+#incbin "Weapon Icons/Club/Silver Club.dmp"
+
+ORG WeaponIconOffset(RatSpiritIcon)
+#incbin "Weapon Icons/Scroll/Rat Spirit.dmp"
+ORG WeaponIconOffset(OxSpiritIcon)
+#incbin "Weapon Icons/Scroll/Ox Spirit.dmp"
+ORG WeaponIconOffset(TigerSpiritIcon)
+#incbin "Weapon Icons/Scroll/Tiger Spirit.dmp"
+ORG WeaponIconOffset(RabbitSpiritIcon)
+#incbin "Weapon Icons/Scroll/Rabbit Spirit.dmp"
+
+ORG WeaponIconOffset(BrassShurikenIcon)
+#incbin "Weapon Icons/Shuriken/Brass Shuriken.dmp"
+ORG WeaponIconOffset(IronShurikenIcon)
+#incbin "Weapon Icons/Shuriken/Iron Shuriken.dmp"
+ORG WeaponIconOffset(SteelShurikenIcon)
+#incbin "Weapon Icons/Shuriken/Steel Shuriken.dmp"
+ORG WeaponIconOffset(SilverShurikenIcon)
+#incbin "Weapon Icons/Shuriken/Silver Shuriken.dmp"
+ORG WeaponIconOffset(PebbleIcon)
+#incbin "Weapon Icons/Shuriken/Pebble.dmp"
+
+ORG WeaponIconOffset(DragonstoneIcon)
+#incbin "Weapon Icons/Stone/Dragonstone.dmp"
+ORG WeaponIconOffset(DragonstonePlusIcon)
+#incbin "Weapon Icons/Stone/Dragonstone+.dmp"
+ORG WeaponIconOffset(BeaststoneIcon)
+#incext Png2Dmp "Weapon Icons/Stone/Beaststone.png"
+
+ORG WeaponIconOffset(TinderIcon)
+#incext Png2Dmp "Weapon Icons/Scroll/Tinder.png"
+
+
+ORG WeaponIconOffset(0x75)
+#incbin "Weapon Type Icons/Tome Icon.dmp" 
+ORG WeaponIconOffset(0x76)
+#incbin "Weapon Type Icons/Shuriken Icon.dmp" 
+ORG WeaponIconOffset(0x77)
+#incbin "Weapon Type Icons/Stone Icon.dmp" 
+
+//Title Screen scroll
+ORG $aacedc
+#incext Png2Dmp "SS-title_edited.png" --lz77
+
+ORG 0xA0AEC8
+#incbin "Prologue Chapter Title.dmp"        //Also same size as original.
+
+ORG 0xA03368
+#incbin "statscreen_comp.bin" //Status Screen, same size as original
+ORG 0xA06460
+#incbin "statscreen_pal.bin"  //palette, also same size
+ORG 0xA05F10
+#incbin "statscreen_tsa.bin"  //tsa, in place
+ORG 0xA064E0
+#incbin "glowy_gone.bin"      //removes glowy thing
+
+POP
+
+#include "Mug Installer.txt"
+Maid_Map_Standing:
+#incext Png2Dmp "Map Sprites/Maid Standing.png" --lz77
+Maid_Map_Moving:
+#incext Png2Dmp "Map Sprites/Maid Moving.png" --lz77
+
+
+

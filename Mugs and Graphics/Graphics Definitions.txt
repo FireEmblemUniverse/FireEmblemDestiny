@@ -1,0 +1,50 @@
+#define Arch_Mug 0x02
+#define Ash_Mug 0x04
+#define Colorz_Mug 0x05
+#define Zim_Mug 0x06
+#define Ghast_Mug 0x07
+
+
+#define Batta_Mug 0x30
+#define Damas_Mug 0x31
+#define Gazga_Mug 0x3A
+
+
+#define ForestGuy_Mug 0x55
+#define Priestess1_Mug 0x32
+#define Priestess2_Mug 0x33
+
+
+//Weapon Icons
+#define BrassKatanaIcon     0x0
+#define IronKatanaIcon      0x1
+#define SteelKatanaIcon     0x2
+#define SilverKatanaIcon    0x3
+#define IronSwordIcon       0x8 //In place of Rapier
+
+#define BrassNaginataIcon   0x13
+#define IronNaginataIcon    0x14
+#define SteelNaginataIcon   0x15
+#define SilverNaginataIcon  0x16
+
+#define BrassClubIcon       0x1E
+#define IronClubIcon        0x1F
+#define SteelClubIcon       0x20
+#define SilverClubIcon      0x21
+
+#define RatSpiritIcon       0x36
+#define OxSpiritIcon        0x37
+#define TigerSpiritIcon     0x38
+#define RabbitSpiritIcon    0x39
+
+#define BrassShurikenIcon   0x3D
+#define IronShurikenIcon    0x3E
+#define SteelShurikenIcon   0x3F
+#define SilverShurikenIcon  0x40
+#define PebbleIcon          0x41
+
+#define DragonstoneIcon     0x43
+#define DragonstonePlusIcon 0x44
+#define BeaststoneIcon      0xD5
+
+#define TinderIcon          0x3B
