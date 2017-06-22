@@ -1,0 +1,5 @@
+4
+0x00 Died
+0x02 Wounded and stayed with party
+0x04 Blank?
+0x05 Normal solo text

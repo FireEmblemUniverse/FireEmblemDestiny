@@ -1,0 +1,7 @@
+These modules deal with some aspects of randomized enemies - both their class and their inventory.
+
+For the "Class Changer" Module, Rando Classes refers to the unit's declared class ID in chapter unit data, before
+randomization takes place.
+
+The Random Item Table Editor allows editing the relative probabilities of items showing up in a randomized unit's inventory.
+The default probabilities can be found here: http://www.serenesforest.net/fe8/miscellaneous/random-items/monsters/
