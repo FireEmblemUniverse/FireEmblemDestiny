@@ -1,0 +1,7 @@
+PUSH
+ORG 0x02AD68
+jumpToHack(WeaponRankHack)
+POP
+WeaponRankHack:
+#incbin "ASM/Weapon Rank Hack.dmp"
+POIN WeaponRankBonusTable

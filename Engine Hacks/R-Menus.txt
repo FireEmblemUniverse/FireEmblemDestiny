@@ -1,0 +1,73 @@
+/*stat screen R menu is at 8a00b38
+find by breaking on key press while R menu open
+
+Each entry is 6 words
+  Pointer 1 (up)
+  POinter 2 (down)
+  POinter 3 (left)
+  Pointer 4 (right)
+  x,y,Txtid
+  Zero
+  (Optional Pointer for alternate text routine)
+
+ST_Name:
+WORD 0
+POIN ST_Class
+WORD 0
+POIN ST_Luck
+BYTE $18
+BYTE $50
+SHORT 0
+WORD 0
+*/
+
+//#include eastdlib.event
+
+#ifdef _FE8_
+
+#define RMenu(up,down,left,right,xcoord,ycoord,TID) "POIN up down left right;BYTE xcoord ycoord; SHORT TID; WORD 0 0;"
+#define RMenu(up,down,left,right,xcoord,ycoord,TID,Getter) "POIN up down left right; BYTE xcoord ycoord; SHORT TID; POIN 0 Getter|1"
+
+#define NameDescGetter $88bd5
+#define ClassDescGetter $88c01
+#define ConditionGetter $88a2d
+
+PUSH
+ORG $a00b38
+ST_Name:
+  RMenu(0,ST_Class,0,ST_Spd,$18,$50,$0,NameDescGetter)
+ST_Class:
+  RMenu(ST_Name,ST_Level,0,ST_Res,$6,$68,$6E8,ClassDescGetter)
+ST_Level:
+  RMenu(ST_Class,ST_HP,0,ST_Exp,$6,$78,$542)
+ST_Exp:
+  RMenu(ST_Class,ST_HP,ST_Level,ST_Res,$26,$78,$543)
+ST_HP:
+  RMenu(ST_Level,0,0,ST_Mov,$6,$88,$544)
+
+ST_Str:
+  RMenu(0,ST_Mag,ST_Name,ST_Trv,$66,$18,$546)
+ST_Mag:
+  RMenu(ST_Str,ST_Skl,ST_Name,ST_Affin,$66,$28,$547)
+ST_Skl:
+  RMenu(ST_Mag,ST_Spd,ST_Name,ST_Cond,$66,$38,$548)
+ST_Spd:
+  RMenu(ST_Skl,ST_Luck,ST_Name,ST_Skills,$66,$48,$549)
+ST_Luck:
+  RMenu(ST_Spd,ST_Def,ST_Name,ST_Skills,$66,$58,$54a)
+ST_Def:
+  RMenu(ST_Luck,ST_Res,ST_Class,ST_Skills,$66,$68,$54b)
+ST_Res:
+  RMenu(ST_Def,ST_Mov,ST_Exp,ST_Skills,$66,$78,$54c)
+ST_Mov:
+  RMenu(ST_Res,0,ST_HP,ST_Skills,$66,$88,$54d)
+ST_Trv:
+  RMenu(0,ST_Affin,ST_Str,0,$A6,$18,$550)
+ST_Affin:
+  RMenu(ST_Trv,ST_Cond,ST_Mag,0,$a6,$28,$551)
+ST_Cond:
+  RMenu(ST_Affin,ST_Skills,ST_Skl,0,$a6,$38,$552,ConditionGetter)
+ST_Skills:
+  RMenu(ST_Cond,0,ST_Spd,0,$b6,$48,$54f)
+POP
+#endif

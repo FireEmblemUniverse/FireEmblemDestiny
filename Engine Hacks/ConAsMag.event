@@ -1,0 +1,76 @@
+#ifdef inBLRange
+
+PUSH
+//Display
+    #include "R-Menus.txt"
+    ORG $a388b
+    BYTE $e0 //never show BWL
+    ORG $8719c
+    #incbin "ASM/statscreen_bars.dmp" //rearrange the stat bars & icons
+    ORG $87404
+    WORD $2003E8C //move the status turns remaining display
+    ORG $205960
+    #incbin "ASM/magcon_drawtext.dmp" //draw the skill name text etc
+    ORG $7592ec
+    #incbin "ASM/magcon_lvlupdraw.dmp" //Level up fix
+    ORG $9a3ed4
+    #incbin "ASM/magcon_lvlnoanim.dmp" //level up fix (no animations)
+    ORG $73590
+    #incbin "ASM/magcon_lvlpromo.dmp" //promotion fix
+    ORG $8746e
+    BL(DrawSkills) //branch to the skill icon function (temporary)
+    ORG $8731e
+    SHORT $68e8    //fix magic statscreen display
+    BL($19230)
+    SHORT $68e9 $231a $56cb 0 0 0 0 0 0
+    ORG $87378      //don't draw mounted/flying icon
+    SHORT 0 0
+    ORG $883be      //don't draw arrows for rescue penalty
+    SHORT $e01e
+    ORG $8721e      //don't cut skl/spd in half
+    SHORT $e004
+    ORG $8723a
+    SHORT $e004
+    ORG $87268
+    SHORT $e004
+    ORG $87284
+    SHORT $e004
+
+//Stat
+    //Initialization
+    ORG 0x17E68
+    callHack_r3(magInitialization)
+    
+    //Loading into attacker struct
+    ORG 0x2A5CE
+    SHORT 0 0 0 0 0x1C30 0xF7EE 0xFE2A 
+    
+    //Write mag back properly after lvl up
+    ORG 0x2C268 
+    callHack_r3(magLevelUp)
+    
+    ORG 0x1826C //Removes the subtraction of class/char base off of cap when checking against cap for initialization.
+    SHORT 0
+
+POP
+
+ALIGN 4
+DrawSkills:
+#incbin "ASM/skill_temp_personal.dmp"
+POIN SkillArrayGetter
+
+SkillArrayGetter:
+#incbin "ASM/skillGetter_personal.dmp"
+
+//This doesn't have to be in bl range but eh
+
+ALIGN 4
+magInitialization:
+#incbin "ASM/New Initialization.dmp"
+ALIGN 4
+magLevelUp:
+#incbin "ASM/New Mag LvlUp Writeback.dmp"
+
+#else
+ERROR _file_ is not in BL Range
+#endif

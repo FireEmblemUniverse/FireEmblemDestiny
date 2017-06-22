@@ -1,0 +1,20 @@
+#ifdef inBLRange
+
+PUSH
+//brave effect only when attacking
+  ORG $2b096
+  SHORT 0     //nop
+  BL(NewBrave)
+
+  ORG $36684
+  SHORT $1c20 //mov r0,r4
+  BL(NewBrave)
+POP
+
+ALIGN 4
+NewBrave:
+#incbin "ASM/brave_pp.dmp"
+
+#else
+ERROR _file_ is not in BL Range
+#endif

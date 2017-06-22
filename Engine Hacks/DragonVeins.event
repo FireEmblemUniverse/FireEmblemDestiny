@@ -1,0 +1,60 @@
+//Dragon Vein hack installation. Remember to add the Unit Menu Option.
+
+PUSH
+
+SongTable(DragonVeinSFXID,DragonVeinSFX,7) //Song Group 7 is for map sfx
+
+ORG (0x037864+4*(DragonVeinTrapID-1))
+POIN VeinInitialization
+
+ORG 0x27318
+#incbin "ASM/Dragon Vein/DrawingDragonVein_1.dmp"
+ORG 0x2731C
+POIN (DrawingOffset_External+0x1)
+ORG 0x27332
+#incbin "ASM/Dragon Vein/DrawingDragonVein_2.dmp"
+ORG 0x27338
+#incbin "ASM/Dragon Vein/DrawingDragonVein_3.dmp"
+ORG (0x8AF880+0x8*Vein_Map_Sprite_Number)
+SHORT 0x0002
+SHORT 0x0000
+POIN VeinGraphics
+POP
+
+DrawingOffset_External:
+#incbin "ASM/Dragon Vein/DrawingDragonVein_Ext_A.dmp"
+BYTE DragonVeinTrapID
+#incbin "ASM/Dragon Vein/DrawingDragonVein_Ext_B.dmp"
+BYTE Vein_Map_Sprite_Number
+#incbin "ASM/Dragon Vein/DrawingDragonVein_Ext_C.dmp"
+
+VeinInitialization:
+#incbin "ASM/Dragon Vein/Initialize.dmp"
+
+VeinGraphics:
+#incbin "ASM/Dragon Vein/SparkleGraphic.dmp"
+
+VeinUsability:
+#incbin "ASM/Dragon Vein/Dragon Vein Usability_A.dmp"
+BYTE DragonVeinTrapID
+#incbin "ASM/Dragon Vein/Dragon Vein Usability_B.dmp"
+
+VeinEffect:
+#incbin "ASM/Dragon Vein/Dragon Vein Execution.dmp"
+POIN DragonVeinEffectTableOffset
+
+ALIGN 4
+DragonVeinSFXData:
+#incbin "bin/DragonVeinSFX.dmp"
+DragonVeinSFX:
+WORD $1 //Dunno what this is, but leave it
+POIN DragonVeinVoicemap
+POIN DragonVeinSFXData
+
+DragonVeinVoicemap:
+WORD $3c00
+POIN DragonVeinWav
+WORD $FF00FF
+
+DragonVeinWav:
+#incbin "bin/DragonVein_wav.dmp"

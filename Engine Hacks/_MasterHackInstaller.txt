@@ -1,0 +1,186 @@
+/////////////////////////////////////////////////////////
+//                                                     //
+//               Master Hack Installer                 //
+//                                                     //
+/////////////////////////////////////////////////////////
+
+#include EAstdlib.event
+#include "Extensions/Hack Installation.txt"
+#include "_UnitMenuDefs.txt"
+
+//Autopatches we need
+  #include "_FEditorAutopatches.txt"
+
+//Include essential fixes
+  #include "_FE8EssentialFixes.txt"
+
+//Statscreen palette based on allegiance
+  #include "StatScreenAllegiance.event"
+
+////////////////////////////////FREE SPACE WITHIN BL RANGE
+  PUSH
+  ORG $1C1EC0
+  #define inBLRange
+
+  //Semitransparency
+  #include "ASM/Semitransparency_changes.txt"
+
+  //Pair Up Suite
+  #include "PairUpSuite.event"
+
+  //Expanded Suspend + Debuffs
+  #include "Suspend_Debuffs.event"
+
+  //Green Squares Fix
+  #include "StaffRangesFix.event"
+
+  //Negative Wt/Crit Display
+  #include "NegativeDisplay.event"
+
+  //L toggle Anims
+  #include "LToggle.event"
+
+  //brave effect only when attacking
+  #include "NewBrave.event"
+
+  //Con-Mag display (incomplete)
+  #include "ConAsMag.event"  
+
+  #undef inBLRange
+  POP
+
+/////////////////////////////////////////FREE SPACE OUTSIDE BL RANGE
+
+  // -- Mov display (if AI byte 4 = 0x20)
+  #include "NullifyMov.event"
+
+  //Improved Sound Mixer
+  #include "SoundMixer.txt"
+
+  //Monster Weapon display fix
+  PUSH
+  ORG $16e20
+  #incbin "ASM/Monsterweapon.dmp"
+  ORG $892f2
+  BYTE 6
+  POP
+
+  //Weapon Rank Display
+  #include "WeaponRankDisplay.event"
+
+  //Fates RNG
+  #include "FatesRNG.event"
+
+  //Repoint Unit Menu
+  PUSH
+    ORG $59D1F8
+    POIN UnitMenuTable
+  POP
+
+  //Danger Zone
+  #include "DangerZone.event"
+
+  //Only one A Support
+  #include "SupportHack.event"
+
+  //HP Bars
+  #include "HPBars.txt"
+
+  //Negative Stat Boosts
+  #include "NegativeStatBoosts.event"
+
+  //DSFE Growths
+  PUSH
+    ORG 0x02BA28
+    #incbin "ASM/DSFE Growths.dmp"
+  POP
+    
+  //Dragon Vein    
+  #include "DragonVeins.event"
+    
+  //Class Base Promotion/Reclass Gains
+  PUSH
+    ORG 0x2BD50
+    #incbin "ASM/Class Base Promotion Gains.dmp"
+  POP
+    
+  //3DS Battle
+  #include "3DSBattle.event"
+    
+  //0xC = Cannot Double Effect
+  PUSH
+    ORG 0x2AFFE
+    SHORT 0x280C 0xD005
+  POP
+    
+  //Healing Based on Weapon Mt/Festal Scaling
+  #include "FestalHealing.event"
+    
+  //Fates EXP Approximation
+  #include "FatesEXP.event"
+    
+  //Weapon Rank Bonuses
+  #include "WRankBonuses.event"
+    
+  //Anyone can seize
+  PUSH
+    ORG 0x22FEE //Take out the lord-route check
+    SHORT 0 0x2001
+  POP
+
+  //Sick as Freeze
+  #include "Freeze.event"
+
+  //Walking Sounds Fix
+  #include "WalkingSounds.event"
+
+
+
+
+  ALIGN 4         //Insert new commands where you want them to appear in the menu
+  UnitMenuTable:
+
+  //Use the macro MenuCommand(name,description,colour,usability,effect)
+  //Color options: NormalText, GrayText, BlueText, OrangeText, GreenText (flashes), BlackText
+  //MenuCommand(DualAtkTxtID,DualAtkDescId,0,DualAtkCheck,DualAtkSelected) 
+
+  UM_Seize
+  MenuCommand(UMText_DV, UMText_DVDesc, GreenText, VeinUsability, VeinEffect)
+  UM_Attack
+  UM_Attack_B
+  UM_Staff
+  UM_Ride
+  UM_Exit
+  UM_Play
+  UM_Dance
+  UM_Steal
+  UM_Summon
+  UM_Summon_DK
+  UM_Pick
+  UM_Talk
+  UM_Support
+  UM_Visit
+  UM_Chest
+  UM_Door
+  UM_Armory
+  UM_Vendor
+  UM_Secret
+  UM_Arena
+  
+  MenuCommand(UMText_Shelter,UMText_ShelterDesc,0,(UsabilityChecks+$18),RescueEffect|1) //rescue
+  MenuCommand(UMText_PairUp,UMText_PairUpDesc,0,UsabilityChecks,PairUpEffect|1)  //pair up
+  MenuCommand(UMText_Transfer,UMText_TransferDesc,GreenText,TransferUsability,TransferTarget) //transfer
+  MenuCommand(UMText_Switch,UMText_SwitchDesc,GreenText,SwitchUsability,SwitchCommand)   //switch
+  MenuCommand(UMText_Separate,UMText_SeparateDesc,0,$8022911,$8022949)              //drop    
+
+  UM_Item
+  UM_Trade
+  UM_Supply
+  UM_Wait
+  UM_Separator 
+  
+  //Padding, just in case.
+  ALIGN 4
+  WORD 0x00000000 0x00000000 0x00000000 0x00000000
+
+//MESSAGE "Used engine hack free space ends at currentOffset"

@@ -1,0 +1,77 @@
+//Essential Fixes for FE8
+//Install with Event Assembler
+PUSH
+//Set Default Options
+  ORG $30d8a  //animations type 2
+  SHORT $3306
+  ORG $30da6  //Game/text speed Fast, Autocursor off
+  SHORT $22d0
+
+//Break HP Cap for Players/NPCs (credit Solum)
+  ORG $181ee
+  SHORT $1c11
+  ORG $2bf4c
+  BYTE $7f
+
+//12 Tracks/16 Sounds Fix (credit Agro/Brendor)
+  ORG $2900
+  SHORT $e00c
+  ORG $2924
+  SHORT $280c $d00e $200c
+  ORG $22440c
+  BYTE $10
+  ORG $224414
+  SHORT $67b0 $0300 $0010
+
+//Fix Weak Promoted Enemies (credit Gryz)
+  ORG $180b4
+  SHORT $2a00 $dc00 $2201
+
+//Hold A to speed up movement (credit Gryz)
+  ORG $794ee
+  SHORT 0
+
+//Skip H&S screen
+  ORG $CC20C
+  SHORT 0
+
+//Skip Intro cutscene
+  ORG $C6714
+  SHORT 0
+
+//Skip New Game text
+  ORG $C4928
+  SHORT 0
+
+//Silence New Game music
+  ORG $C4A0C
+  BYTE 0
+
+//Autocursor Fix (credit Vennobennu)
+  ORG $3325a
+  SHORT $e021
+
+//Pierce Glitch Fix (credit Brendor)
+  ORG $2b290
+  BYTE $a0
+  ORG $2b482
+  BYTE $a0
+
+//Unlock Sound Room songs
+  ORG $aede0
+  BYTE $FF
+
+//CG Fade glitch
+  ORG $EBCA
+  BYTE 8
+  ORG $EDE0
+  SHORT $1c0a
+
+//Enemy Control Glitch Fix (Credits to Brendor)
+  ORG 0x377A0
+  SHORT 0xE007
+
+//Mode Coefficient EXP fix (credit Vennobennu)
+  ORG 0x2C474
+  WORD 0
+POP

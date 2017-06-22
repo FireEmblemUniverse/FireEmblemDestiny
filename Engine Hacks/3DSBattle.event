@@ -1,0 +1,40 @@
+PUSH
+ORG 0x16BEC
+#incbin "ASM/3DS Battle/Effectiveness.dmp"
+POIN ItemTable
+ORG 0x2AABC
+#incbin "ASM/3DS Battle/3DS Power.dmp"
+ORG 0x2AB74
+#incbin "ASM/3DS Battle/3DS Attack Speed.dmp"
+ORG 0x2ABAC
+#incbin "ASM/3DS Battle/3DS Hit.dmp"
+ORG 0x2ABE4
+gotoHack(Avoid)
+ORG 0x2AC18
+#incbin "ASM/3DS Battle/3DS Crit.dmp"
+ORG 0x2AC54
+jumpToHack(Dodge)
+ORG 0x2C7C0
+gotoHack(WeaponRankBasedWTA)
+
+ORG 0x3673E //This stops the glowing for an inversely effective weapon for the attacker (changes a cmp r0, #0x00; beq to cmp r0, #0x01 bne) 
+SHORT 0x0000 0x2801 0xD103
+ORG 0x367DA //And here for the defender
+SHORT 0x0000 0x2801 0xD101
+
+ORG 0x2AFBC //This sets the doubling threshold to 5
+BYTE 0x04
+ORG 0x2AFCE
+BYTE 0x04
+POP
+
+ALIGN 4
+Avoid:
+#incbin "ASM/3DS Battle/3DS Avoid.dmp"
+ALIGN 4
+Dodge:
+#incbin "ASM/3DS Battle/3DS Dodge.dmp"
+ALIGN 4
+WeaponRankBasedWTA:
+#incbin "ASM/3DS Battle/Weapon Rank Based WTA.dmp"
+POIN WTATable

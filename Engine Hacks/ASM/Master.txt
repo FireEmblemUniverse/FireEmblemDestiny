@@ -1,0 +1,52 @@
+//This event file allows you to patch ASM hacks easily.
+
+#include eastdlib.event
+//#define BL(pointer) "SHORT (((((pointer - CURRENTOFFSET-4)&$7ffffe)>>1)&$3ff800)>>11)|0xf000 ($7FF&((pointer - CURRENTOFFSET-4)&$7ffffe)>>1)|0xf800"
+
+#define BLRange(pointer) "(pointer - CURRENTOFFSET - 4)>>1"
+
+#define BL(pointer) "SHORT ((BLRange(pointer)>>11)|0xf000) ((BLRange(pointer)&0x7ff)|0xf800);"
+
+//#define ErrorMsg(pointer) "MESSAGE pointer is out of bl range from CURRENTOFFSET"
+
+//#define BL(pointer) "If(IsZero(BLRange(pointer)>>22), WriteBL(pointer), ErrorMsg)"
+
+ORG $27218
+BL(PairUpMapSprite)
+ORG $272c8
+SHORT 0x204 //draw rescued but not dead units
+ORG $278B4
+SHORT 0xe03c //don't draw rescuing icon
+ORG $320EE
+BL(PairUp)
+ORG $1833E    //ignore con/aid check
+SHORT 0x0000
+ORG $25356    //can't pair up with green units
+BL(0x24DA4)
+ORG $1CA9E
+BL(SwitchCanceler)
+ORG $1d158
+BL(SwitchCanceler+0x14) //Watch Out this could potentially change***
+
+
+ORG $E17C0   //repointed Triangle Attack graphic
+#include "ASM Library\Semitransparency_changes.txt"
+
+WeaponBroke:
+//incbin weaponbroke
+
+PairUp:
+#incbin "ASM Library\pairup.dmp"
+
+PairUpMapSprite:
+#incbin "ASM Library\mapsprite.dmp"
+
+SwitchCanceler:
+#incbin "ASM Library\switch2.dmp"
+
+ORG $E90000   //Free space for ASM hacks
+//BYTE IsZero(BLRange(Label)>>22)
+BL(Label)
+
+ORG $E90080
+Label:

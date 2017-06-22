@@ -1,0 +1,8 @@
+Vennobennu/Wizard of the South - Today at 3:30 PM
+@Jesus-Gandalf/Wizard of the West FE8's weapon rank autoleveling routine is located at $17F20
+but I don't know how the weapon display hack interacts with it
+-
+[9:06 PM] Ash: Remember to give Outlaw and Ninja pick though
+[9:06 PM] Jesus-Gandalf/Wizard of the West: I'll just make the lockpick skill the pick skill
+
+Sleep as Freeze

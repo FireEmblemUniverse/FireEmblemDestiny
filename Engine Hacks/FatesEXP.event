@@ -1,0 +1,7 @@
+PUSH
+ORG 0x2C534
+gotoHack(expRoutine)
+POP
+
+expRoutine:
+#incbin "ASM/Fates EXP Approximation.dmp"

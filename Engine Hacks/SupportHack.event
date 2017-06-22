@@ -1,0 +1,11 @@
+//More than 5 Supports (one A support limit)
+
+PUSH
+ORG $2833a
+SHORT 0
+jumpToHack(SupportHack)
+POP
+
+ALIGN 4
+SupportHack:
+#incbin "ASM/SupportHack.dmp"

@@ -1,0 +1,23 @@
+PUSH
+ORG 0x16FB8
+#incbin "ASM/HealBasedOnPowerAndFestalScaling.dmp"
+POIN WeaponRankBonusTable
+
+ORG 0x25E7C //Tell Heal, Mend, Recover to use the 1-2 range routine
+jumpToHack(OneTwoRangeStaff)
+
+ORG 0x25EB0 //Physic
+jumpToHack(OneTenRangeStaff)
+
+ORG 0x28AB8 //Tell Fortify to be 1-10 range
+POIN (OneTenRangeStaff+1)
+
+ORG 0x18A32 //Tell Mag/2 range staves to use Con/2
+SHORT 0xF000 0xFBFD 0 0 0 0 0 0 0x1C01
+POP
+
+ALIGN 4
+OneTwoRangeStaff:
+#incbin "ASM/OneToTwoRangeStaff.dmp"
+OneTenRangeStaff:
+#incbin "ASM/OneToTenRangeStaff.dmp"

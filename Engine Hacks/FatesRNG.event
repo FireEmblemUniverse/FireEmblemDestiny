@@ -1,0 +1,9 @@
+//Fates RNG
+PUSH
+ORG $cc2
+SHORT 0
+jumpToHack(FatesRNG)
+POP
+ALIGN 4
+FatesRNG:
+#incbin "ASM/FatesRNG.dmp"

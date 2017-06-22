@@ -1,0 +1,8 @@
+0x1 = +10 dodge
+0x2 = -5 dodge
+0x4 = -3 aspd
+0x8 = -5 aspd
+0x10 = If not effective on enemy, half might.
+0x20 = x4 Damage on Crit
+0x40 = ???
+0x80 = 0 = staff range = 1-10, 1 = staff range = 1-7 (This is for a particular routine)
