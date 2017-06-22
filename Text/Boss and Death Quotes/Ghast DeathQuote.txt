@@ -1,0 +1,4 @@
+[Right][LoadGhastPortrait]
+*whine*[AN]
+Unfortunately, it seems[N]
+that I must retreat...[A][X]

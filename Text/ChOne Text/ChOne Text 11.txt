@@ -1,0 +1,22 @@
+[.v....][LoadArchPortrait]
+
+[....v.][LoadGhastPortrait]
+
+[.v....]
+Whoa, that's a lot of money.[N]
+This seems really convenient.[AN]
+It's too convenient...[N]
+It's almost as if this was[AN]
+placed here for the explicit[N]
+purpose of allowing me to[AN]
+purchase more gear in the[N]
+near future. Anyways,[AN]
+good job, Ghast.[N]
+anymore of those keys?[A]
+
+[....v.]
+*shakes head*[AN]
+
+[.v....]
+Of course not. On the upside,[N]
+at least there wasn't a trap.[A][X]

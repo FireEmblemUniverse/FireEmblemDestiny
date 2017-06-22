@@ -1,0 +1,3 @@
+Mages who ride astride a[N]
+pegasus. Sadly, their mount[N]
+is not yet pitch-black.[X]

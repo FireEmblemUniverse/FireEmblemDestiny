@@ -1,0 +1,22 @@
+[.v....][LoadColorzPortrait]
+
+[....v.][LoadAshPortrait]
+Colorz, we have to do SOMETHING.[A]
+
+[.v....]
+What do you propose we do?[A]
+
+[....v.]
+I...[.5] I dunno...[A]
+
+[.v....]
+I see you're awake now.[A]
+
+[....v.]
+[DisableBlinking][Wink]
+Hey there![EnableBlinking][A]
+
+[.v....]
+There are better places to take a nap[N]
+than on the ground you know.[AN]
+Give me your hand.[A][X]

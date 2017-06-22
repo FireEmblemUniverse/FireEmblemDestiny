@@ -1,0 +1,5 @@
+[Right][LoadAshPortrait]
+Oh no. I'm bleeding. Why can't[N]
+I use my staff on myself!?[AN]
+...but, no. I cannot die here.[N]
+I must retreat.[A][X]

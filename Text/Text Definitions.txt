@@ -1,0 +1,163 @@
+#ifndef DESTINY_TEXT_DEFINITIONS
+#define DESTINY_TEXT_DEFINITIONS
+
+//Character Names and Descriptions
+//Player Units
+#define Arch_Name 0x212
+#define Arch_Description 0x26E
+#define Ash_Name 0x213
+#define Ash_Description 0x26F
+#define Colorz_Name 0x214
+#define Colorz_Description 0x270
+#define Zim_Name 0x215
+#define Zim_Description 0x271
+#define Ghast_Name 0x216
+#define Ghast_Description 0x272
+
+//Bosses
+#define Damas_Name 0x239
+#define Damas_Description 0x294
+#define Batta_Name 0x249
+#define Batta_Description 0x2A3
+#define Gazga_Name 0x240
+#define Gazga_Description 0x295
+
+
+//Classes
+#define HronianPrince_Name 0x02BF
+#define HronianPrince_Description 0309
+
+#define PegasusMage_Name 0x02E7
+#define PegasusMage_Description 0x0333
+
+#define Troubadour_Description 0x0336
+
+#define Maid_Name 0x02D4
+#define Maid_Description 0x0320
+
+#define Dawg_Name 0x02F9
+#define Dawg_Description 0x0345
+
+//Player Death Quotes
+#define Arch_DeathQuote 0x0C23
+#define Ash_DeathQuote 0x0C25
+#define Colorz_DeathQuote 0x0C27
+#define Zim_DeathQuote 0x0C28
+#define Ghast_DeathQuote 0x0C29
+
+//Interface Text
+#define SS_Skills 0x4F8
+#define SS_SkillsDesc 0x54F
+#define UMText_DV 0x3B
+#define UMText_DVDesc 0x3C
+#define UMText_PairUp 0x3D
+#define UMText_PairUpDesc 0x3E
+#define UMText_Shelter 0x689
+#define UMText_ShelterDesc 0x6C5
+#define UMText_Separate 0x68A
+#define UMText_SeparateDesc 0x6C6
+#define UMText_Transfer 0x68B
+#define UMText_TransferDesc 0x6C7
+#define UMText_Switch 0x68C
+#define UMText_SwitchDesc 0x6C8
+
+#define Avd_Text 0x502
+#define Shuriken_Text 0x50B
+#define Tome_Text 0x50A
+#define Stone_Text 0x50C
+#define Rod_Text 0x509
+
+//Item Text
+/*
+Item Names = start at 0x354
+Item Descriptions = start at 0x404
+*/
+#define EmptyText 0x40C //Replace Rapier's description
+
+#define BrassKatana_Name 0x355
+#define BrassKatana_Description 0x405
+#define IronKatana_Name 0x354
+#define IronKatana_Description 0x404
+#define IronSword_Name 0x35C
+
+#define BrassNaginata_Name 0x36A
+#define BrassNaginata_Description 0x41A
+
+#define BrassClub_Name 0x37A
+#define BrassClub_Description 0x42A
+#define IronClub_Name 0x37B
+#define IronClub_Description 0x42B
+
+#define BrassYumi_Name 0x38B
+#define BrassYumi_Description 0x43B
+
+#define BrassShuriken_Name 0x3B0
+#define BrassShuriken_Description 0x45F
+#define IronShuriken_Name 0x3B1
+#define IronShuriken_Description 0x460
+
+#define RatSpirit_Name 0x3A9
+#define RatSpirit_Description 0x458
+#define OxSpirit_Name 0x3AA
+#define OxSpirit_Description 0x459
+
+#define Dragonstone_Name 0x398
+#define Dragonstone_Description 0x448
+#define Beaststone_Name 0x3A2
+#define Beaststone_Description 0x452
+
+#define BloomFestal_Name 0x3C2
+#define BloomFestal_Description 0x471
+#define SunFestal_Name 0x3C3
+#define SunFestal_Description 0x472
+
+#define Tinder_Name 0x403
+#define Tinder_Description 0x4AB
+
+//Prologue Related Text
+#define Prologue_WM_Text 0x8DB //Replacing "The continent of Magvel."
+
+#define Prologue_Text_1 0x903 //Replacing "I bear bad news"
+#define Prologue_Text_2 0x904
+#define Prologue_Text_3 0x905
+#define Prologue_Text_4 0x906
+#define Prologue_Text_5 0x907
+#define Prologue_Text_Village 0x908
+
+#define PrologueGeneric_Name 0x909 //TODO: We can find slots unused by units for this, probably.
+#define PrologueGeneric_Description 0x90A
+
+#define Batta_BossQuote 0x090B
+#define Batta_DeathQuote 0x090C
+#define Damas_BossQuote 0x090D //0x0935
+#define Damas_DeathQuote 0x090E //0x0936
+
+#define Prologue_Goal 0x019D    //TODO: make setters for these
+#define Prologue_Objective 0x01A2
+
+//ChOne Related Text
+#define ChOne_Text_1 0x90F
+#define ChOne_Text_2 0x910
+#define ChOne_Text_3 0x911
+#define ChOne_Text_4 0x912
+#define ChOne_Text_5 0x913
+#define ChOne_Text_6 0x914
+#define ChOne_Text_7 0x915
+#define ChOne_Text_8 0x916
+#define ChOne_Text_9 0x917
+#define ChOne_Text_10 0x918
+#define ChOne_Text_11 0x919
+#define ChOne_Text_12 0x91A
+#define ChOne_Text_13 0x91B
+#define ChOne_Text_14 0x91C
+
+#define ChOneGeneric_Name PrologueGeneric_Name //Same as prologue bandits
+#define ChOneGeneric_Description PrologueGeneric_Description
+
+#define Gazga_BossQuote 0x091D
+#define Gazga_DeathQuote 0x091E
+
+#define ChOne_Goal 0x019F    //TODO: make setters for these
+#define ChOne_Objective 0x01A3
+
+#endif

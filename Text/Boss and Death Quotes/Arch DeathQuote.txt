@@ -1,0 +1,3 @@
+[Right][LoadArchPortrait]
+Well, what a dumb way to[N]
+die in a dumb game...[A][X]

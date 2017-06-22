@@ -1,0 +1,3 @@
+[...v..][LoadGhastPortrait]
+Grrr...! [.5]Woof woof![A]
+[X]

@@ -1,0 +1,2 @@
+Reduces enemy Mov to 0 and[N]
+Avo by 20 for one turn.[X]

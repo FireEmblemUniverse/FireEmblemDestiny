@@ -1,0 +1,8 @@
+[.v....][LoadArchPortrait]
+
+[....v.][LoadGhastPortrait]
+Woof woof! *bites*[A]
+
+[.v....]
+Ow! Whoa, where are[N]
+you taking me!?[A][X]

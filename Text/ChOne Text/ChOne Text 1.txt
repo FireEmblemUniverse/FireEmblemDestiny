@@ -1,0 +1,6 @@
+[OpenLeft][LoadPortrait][0x04][0x01]
+[OpenRight][LoadPortrait][0x05][0x01]
+Hey Ash, isn't this...?[A]
+[OpenLeft][MoveLeft]
+Yeah! I think it is.[A]
+[X]

@@ -1,0 +1,50 @@
+[.v....][LoadArchPortrait]
+
+[...v..][LoadPortrait][Priestess1Portrait]
+
+[.....v][LoadPortrait][Priestess2Portrait]
+There it is, milord.[AN]
+In thine noble fray,[N]
+thou smote the throne[AN]
+in twain, revealing[N]
+your birthright.[A]
+
+[.v....]
+I didn't touch the throne.[N]
+Nobody touched the throne.[AN]
+The throne is completely[N]
+intact. Look, it's right[AN]
+there in front of you.[A]
+
+[.....v]
+Aye, the throne is intact[N]
+in the physical realm,[AN]
+but in the spirital realm,[N]
+thine pulsing divine aura[AN]
+rent the throne, which now[N]
+lies bent to receive the[AN]
+will of its master.[A]
+
+[...v..]
+The Dragon Vein lies[N]
+bare before you, milord.[AN]
+You need only rouse it.[A]
+
+[.v....]
+Sigh. Look, put some proper[N]
+clothes on and I'll do it,[AN]
+alright?[A]
+
+[.....v]
+You ask the impossible,[N]
+milord.[A]
+
+[...v..]
+The Virgin God wouldst be[N]
+most sorrowful to know[AN]
+our nubile flesh hast become[N]
+profaned by common rags.[A]
+
+[.v....]
+...Ugh. Fine. Let's[N]
+get this over with.[A][X]

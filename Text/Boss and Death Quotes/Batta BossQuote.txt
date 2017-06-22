@@ -1,0 +1,3 @@
+[Right][LoadPortrait][BattaPortrait]
+Think you can stand up to[N]
+Batta the Beast? Taste my axe![A][X]

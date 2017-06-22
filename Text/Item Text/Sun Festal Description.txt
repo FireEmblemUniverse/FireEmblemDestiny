@@ -1,0 +1,2 @@
+Restores a lot of HP[N]
+to a nearby ally.[X]

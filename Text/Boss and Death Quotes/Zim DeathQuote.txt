@@ -1,0 +1,7 @@
+[Right][LoadZimPortrait]
+Oh no, the Duke would be[N]
+troubled if I fell here.[A][2N]
+
+I must retreat.[A]
+
+[X]

@@ -1,0 +1,23 @@
+[.v....][LoadArchPortrait]
+
+[....v.][LoadGhastPortrait]
+
+[.v....]
+Good Lord, that's a LOT of chests.[AN]
+This can't be real. There has to[N]
+be a catch, there's always a catch.[AN]
+It's never this easy. As soon as[N]
+I open one of these, a trap is[AN]
+going to be sprung, and I'm going[N]
+to take an arrow to the chest,[AN]
+or perhaps it's a mimic that[N]
+will attempt to eat me. Or maybe[AN]
+it's an alarm that will trigger a[N]
+flood of bandits to come in and[AN]
+capture me or kill me where I[N]
+stand. That's how it always goes[AN]
+in these scenarios with easy to[N]
+access treasure.[A]
+
+[....v.]
+Woof![A][X]

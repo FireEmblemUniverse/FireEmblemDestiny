@@ -1,0 +1,3 @@
+[Right][LoadPortrait][DamasPortrait]
+Well, you got in my way,[N]
+so you're going to pay.[A][X]

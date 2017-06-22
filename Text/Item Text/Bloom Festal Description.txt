@@ -1,0 +1,2 @@
+Restores some HP to[N]
+a nearby ally.[X]

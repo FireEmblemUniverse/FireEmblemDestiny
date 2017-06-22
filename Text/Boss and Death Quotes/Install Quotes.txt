@@ -1,0 +1,33 @@
+#define DeathQuoteTable 0x9ECD4C
+#define BossQuoteTable 0x9EC6BC
+
+#define AllChapters 0xFF
+#define defDeathQuote(character, chapter, textID) "BYTE character; BYTE 0x00 0xFF chapter 0x0 0x0; SHORT textID 0x0 0x0"
+#define defDeathQuote(character, chapter, eventID, textID) "BYTE character 0x00 0xFF chapter eventID 0x0; SHORT textID 0x0 0x0"
+
+#define defBossQuote(attacker, defender, chapter, eventID, textID) "BYTE defender 0x0 attacker 0x0 chapter 0x0 eventID 0x0; SHORT textID 0x0 0x0 0x0"
+#define defBossQuote(boss, chapter, eventID, textID) "BYTE 0x0 0x0 boss 0x0 chapter 0x0 eventID 0x0; SHORT textID 0x0 0x0 0x0; BYTE boss 0x0 0x0 0x0 chapter 0x0 eventID 0x0; SHORT textID 0x0 0x0 0x0"
+
+PUSH
+ORG DeathQuoteTable
+//Player Units
+defDeathQuote(Arch, AllChapters, 0x65, Arch_DeathQuote)
+defDeathQuote(Ash, AllChapters, Ash_DeathQuote)
+defDeathQuote(Colorz, AllChapters, Colorz_DeathQuote)
+defDeathQuote(Zim, AllChapters, Zim_DeathQuote)
+defDeathQuote(Ghast, AllChapters, Ghast_DeathQuote)
+
+//Bosses
+defDeathQuote(Batta, 0x0, Batta_DeathQuote) //0x0 = Prologue
+defDeathQuote(Damas, 0x0, Damas_DeathQuote)
+defDeathQuote(Gazga, 0x1, Gazga_DeathQuote) //Ch1
+POP
+
+
+PUSH
+ORG BossQuoteTable
+defBossQuote(Batta, 0x0, 0x7, Batta_BossQuote)
+defBossQuote(Damas, 0x0, 0x8, Damas_BossQuote)
+defBossQuote(Gazga, 0x1, 0x9, Gazga_BossQuote)
+
+POP

@@ -1,0 +1,443 @@
+#include "../Destiny Definitions.txt"
+#include "Tools/Tool Helpers.txt" //setText
+#include "Boss and Death Quotes/Install Quotes.txt"
+
+//Character Text
+//Player Units
+  Arch_Name_Pointer:
+  setText(Arch_Name, Arch_Name_Pointer)
+  #incext ParseFile "Unit Text/Arch Name.txt"
+  
+  Arch_Description_Pointer:
+  setText(Arch_Description, Arch_Description_Pointer)
+  #incext ParseFile "Unit Text/Arch Description.txt"
+  
+  Ash_Name_Pointer:
+  setText(Ash_Name, Ash_Name_Pointer)
+  #incext ParseFile "Unit Text/Ash Name.txt"
+  
+  Ash_Description_Pointer:
+  setText(Ash_Description, Ash_Description_Pointer)
+  #incext ParseFile "Unit Text/Ash Description.txt"
+  
+  Colorz_Name_Pointer:
+  setText(Colorz_Name, Colorz_Name_Pointer)
+  #incext ParseFile "Unit Text/Colorz Name.txt"
+  
+  Colorz_Description_Pointer:
+  setText(Colorz_Description, Colorz_Description_Pointer)
+  #incext ParseFile "Unit Text/Colorz Description.txt"
+  
+  Zim_Name_Pointer:
+  setText(Zim_Name, Zim_Name_Pointer)
+  #incext ParseFile "Unit Text/Zim Name.txt"
+  
+  Zim_Description_Pointer:
+  setText(Zim_Description, Zim_Description_Pointer)
+  #incext ParseFile "Unit Text/Zim Description.txt"
+  
+  Ghast_Name_Pointer:
+  setText(Ghast_Name, Ghast_Name_Pointer)
+  #incext ParseFile "Unit Text/Ghast Name.txt"
+  
+  Ghast_Description_Pointer:
+  setText(Ghast_Description, Ghast_Description_Pointer)
+  #incext ParseFile "Unit Text/Ghast Description.txt"
+  
+
+//Bosses
+  Batta_Name_Pointer:
+  setText(Batta_Name, Batta_Name_Pointer)
+  #incext ParseFile "Unit Text/Batta Name.txt"
+  
+  Batta_Description_Pointer:
+  setText(Batta_Description, Batta_Description_Pointer)
+  #incext ParseFile "Unit Text/Batta Description.txt"
+  
+  Damas_Name_Pointer:
+  setText(Damas_Name, Damas_Name_Pointer)
+  #incext ParseFile "Unit Text/Damas Name.txt"
+  
+  Damas_Description_Pointer:
+  setText(Damas_Description, Damas_Description_Pointer)
+  #incext ParseFile "Unit Text/Damas Description.txt"
+  
+  Gazga_Name_Pointer:
+  setText(Gazga_Name, Gazga_Name_Pointer)
+  #incext ParseFile "Unit Text/Gazga Name.txt"
+  
+  Gazga_Description_Pointer:
+  setText(Gazga_Description, Gazga_Description_Pointer)
+  #incext ParseFile "Unit Text/Gazga Description.txt"
+
+//Classes
+  HronianPrince_Name_Pointer:
+  setText(HronianPrince_Name, HronianPrince_Name_Pointer)
+  #incext ParseFile "Class Text/Hronian Prince Name.txt"
+  HronianPrince_Description_Pointer:
+  setText(HronianPrince_Description, HronianPrince_Description_Pointer)
+  #incext ParseFile "Class Text/Hronian Prince Description.txt"
+
+  PegasusMage_Name_Pointer:
+  setText(PegasusMage_Name, PegasusMage_Name_Pointer)
+  #incext ParseFile "Class Text/Pegasus Mage Name.txt"
+  PegasusMage_Description_Pointer:
+  setText(PegasusMage_Description, PegasusMage_Description_Pointer)
+  #incext ParseFile "Class Text/Pegasus Mage Description.txt"
+
+  Troubadour_Description_Pointer:
+  setText(Troubadour_Description, Troubadour_Description_Pointer)
+  #incext ParseFile "Class Text/Troubadour Description.txt"
+
+  Maid_Name_Pointer:
+  setText(Maid_Name, Maid_Name_Pointer)
+  #incext ParseFile "Class Text/Maid Name.txt"
+  Maid_Description_Pointer:
+  setText(Maid_Description, Maid_Description_Pointer)
+  #incext ParseFile "Class Text/Maid Description.txt"
+
+  Dawg_Name_Pointer:
+  setText(Dawg_Name, Dawg_Name_Pointer)
+  #incext ParseFile "Class Text/Dawg Name.txt"
+  Dawg_Description_Pointer:
+  setText(Dawg_Description, Dawg_Description_Pointer)
+  #incext ParseFile "Class Text/Dawg Description.txt"
+
+  
+//Boss and Death Quotes
+  Arch_DeathQuote_Pointer:
+  setText(Arch_DeathQuote, Arch_DeathQuote_Pointer)
+  #incext ParseFile "Boss and Death Quotes/Arch DeathQuote.txt"
+  
+  Ash_DeathQuote_Pointer:
+  setText(Ash_DeathQuote, Ash_DeathQuote_Pointer)
+  #incext ParseFile "Boss and Death Quotes/Ash DeathQuote.txt"
+  
+  Colorz_DeathQuote_Pointer:
+  setText(Colorz_DeathQuote, Colorz_DeathQuote_Pointer)
+  #incext ParseFile "Boss and Death Quotes/Colorz DeathQuote.txt"
+  
+  Zim_DeathQuote_Pointer:
+  setText(Zim_DeathQuote, Zim_DeathQuote_Pointer)
+  #incext ParseFile "Boss and Death Quotes/Zim DeathQuote.txt"
+  
+  Ghast_DeathQuote_Pointer:
+  setText(Ghast_DeathQuote, Ghast_DeathQuote_Pointer)
+  #incext ParseFile "Boss and Death Quotes/Ghast DeathQuote.txt"
+
+
+  Batta_DeathQuote_Pointer:
+  setText(Batta_DeathQuote, Batta_DeathQuote_Pointer)
+  #incext ParseFile "Boss and Death Quotes/Batta DeathQuote.txt"
+  
+  Batta_BossQuote_Pointer:
+  setText(Batta_BossQuote, Batta_BossQuote_Pointer)
+  #incext ParseFile "Boss and Death Quotes/Batta BossQuote.txt"
+  
+  Damas_DeathQuote_Pointer:
+  setText(Damas_DeathQuote, Damas_DeathQuote_Pointer)
+  #incext ParseFile "Boss and Death Quotes/Damas DeathQuote.txt"
+  
+  Damas_BossQuote_Pointer:
+  setText(Damas_BossQuote, Damas_BossQuote_Pointer)
+  #incext ParseFile "Boss and Death Quotes/Damas BossQuote.txt"
+  
+  Gazga_DeathQuote_Pointer:
+  setText(Gazga_DeathQuote, Gazga_DeathQuote_Pointer)
+  #incext ParseFile "Boss and Death Quotes/Gazga DeathQuote.txt"
+  
+  Gazga_BossQuote_Pointer:
+  setText(Gazga_BossQuote, Gazga_BossQuote_Pointer)
+  #incext ParseFile "Boss and Death Quotes/Gazga BossQuote.txt"
+
+
+//Interface Text
+  SS_Skills_Pointer:
+  setText(SS_Skills, SS_Skills_Pointer)
+  #incext ParseFile "Interface Text/Skills Name.txt"
+  
+  SS_SkillsDesc_Pointer:
+  setText(SS_SkillsDesc, SS_SkillsDesc_Pointer)
+  #incext ParseFile "Interface Text/Skills Description.txt"
+  
+  UMText_DV_Pointer:
+  setText(UMText_DV, UMText_DV_Pointer)
+  #incext ParseFile "Interface Text/Dragon Vein Name.txt"
+  
+  UMText_DVDesc_Pointer:
+  setText(UMText_DVDesc, UMText_DVDesc_Pointer)
+  #incext ParseFile "Interface Text/Dragon Vein Description.txt"
+  
+  UMText_PairUp_Pointer:
+  setText(UMText_PairUp, UMText_PairUp_Pointer)
+  #incext ParseFile "Interface Text/Pair Up Name.txt"
+  
+  UMText_PairUpDesc_Pointer:
+  setText(UMText_PairUpDesc, UMText_PairUpDesc_Pointer)
+  #incext ParseFile "Interface Text/Pair Up Description.txt"
+  
+  UMText_Shelter_Pointer:
+  setText(UMText_Shelter, UMText_Shelter_Pointer)
+  #incext ParseFile "Interface Text/Shelter Name.txt"
+  
+  UMText_Separate_Pointer:
+  setText(UMText_Separate, UMText_Separate_Pointer)
+  #incext ParseFile "Interface Text/Separate Name.txt"
+  
+  UMText_SeparateDesc_Pointer:
+  setText(UMText_SeparateDesc, UMText_SeparateDesc_Pointer)
+  #incext ParseFile "Interface Text/Separate Description.txt"
+  
+  UMText_Transfer_Pointer:
+  setText(UMText_Transfer, UMText_Transfer_Pointer)
+  #incext ParseFile "Interface Text/Transfer Name.txt"
+  
+  UMText_TransferDesc_Pointer:
+  setText(UMText_TransferDesc, UMText_TransferDesc_Pointer)
+  #incext ParseFile "Interface Text/Transfer Description.txt"
+  
+  UMText_Switch_Pointer:
+  setText(UMText_Switch, UMText_Switch_Pointer)
+  #incext ParseFile "Interface Text/Switch Name.txt"
+  
+  UMText_SwitchDesc_Pointer:
+  setText(UMText_SwitchDesc, UMText_SwitchDesc_Pointer)
+  #incext ParseFile "Interface Text/Switch Description.txt"
+  
+  
+  Avd_Text_Pointer:
+  setText(Avd_Text, Avd_Text_Pointer)
+  #incext ParseFile "Interface Text/Avd.txt"
+  Shuriken_Text_Pointer:
+  setText(Shuriken_Text, Shuriken_Text_Pointer)
+  #incext ParseFile "Interface Text/Shuri..txt"
+  Tome_Text_Pointer:
+  setText(Tome_Text, Tome_Text_Pointer)
+  #incext ParseFile "Interface Text/Tome.txt"
+  Rod_Text_Pointer:
+  setText(Rod_Text, Rod_Text_Pointer)
+  #incext ParseFile "Interface Text/Rod.txt"
+  Stone_Text_Pointer:
+  setText(Stone_Text, Stone_Text_Pointer)
+  #incext ParseFile "Interface Text/Stone.txt"
+
+
+//Item Text
+  EmptyText_Pointer:
+  setText(EmptyText, EmptyText_Pointer)
+  #incext ParseFile "Item Text/Empty.txt"
+
+  BrassKatana_Name_Pointer:
+  setText(BrassKatana_Name, BrassKatana_Name_Pointer)
+  #incext ParseFile "Item Text/Brass Katana Name.txt"
+  BrassKatana_Description_Pointer:
+  setText(BrassKatana_Description, BrassKatana_Description_Pointer)
+  #incext ParseFile "Item Text/Brass Katana Description.txt"
+  IronKatana_Name_Pointer:
+  setText(IronKatana_Name, IronKatana_Name_Pointer)
+  #incext ParseFile "Item Text/Iron Katana Name.txt"
+  IronKatana_Description_Pointer:
+  setText(IronKatana_Description, IronKatana_Description_Pointer)
+  #incext ParseFile "Item Text/Iron Katana Description.txt"
+  IronSword_Name_Pointer:
+  setText(IronSword_Name, IronSword_Name_Pointer)
+  #incext ParseFile "Item Text/Iron Sword Name.txt"
+
+  BrassNaginata_Name_Pointer:
+  setText(BrassNaginata_Name, BrassNaginata_Name_Pointer)
+  #incext ParseFile "Item Text/Brass Naginata Name.txt"
+  BrassNaginata_Description_Pointer:
+  setText(BrassNaginata_Description, BrassNaginata_Description_Pointer)
+  #incext ParseFile "Item Text/Brass Naginata Description.txt"
+
+  BrassClub_Name_Pointer:
+  setText(BrassClub_Name, BrassClub_Name_Pointer)
+  #incext ParseFile "Item Text/Brass Club Name.txt"
+  BrassClub_Description_Pointer:
+  setText(BrassClub_Description, BrassClub_Description_Pointer)
+  #incext ParseFile "Item Text/Brass Club Description.txt"
+  IronClub_Name_Pointer:
+  setText(IronClub_Name, IronClub_Name_Pointer)
+  #incext ParseFile "Item Text/Iron Club Name.txt"
+  setText(IronClub_Description, EmptyText_Pointer)
+
+  BrassYumi_Name_Pointer:
+  setText(BrassYumi_Name, BrassYumi_Name_Pointer)
+  #incext ParseFile "Item Text/Brass Yumi Name.txt"
+  BrassYumi_Description_Pointer:
+  setText(BrassYumi_Description, BrassYumi_Description_Pointer)
+  #incext ParseFile "Item Text/Brass Yumi Description.txt"
+
+  BrassShuriken_Name_Pointer:
+  setText(BrassShuriken_Name, BrassShuriken_Name_Pointer)
+  #incext ParseFile "Item Text/Brass Shuriken Name.txt"
+  BrassShuriken_Description_Pointer:
+  setText(BrassShuriken_Description, BrassShuriken_Description_Pointer)
+  #incext ParseFile "Item Text/Brass Shuriken Description.txt"
+  IronShuriken_Name_Pointer:
+  setText(IronShuriken_Name, IronShuriken_Name_Pointer)
+  #incext ParseFile "Item Text/Iron Shuriken Name.txt"
+  IronShuriken_Description_Pointer:
+  setText(IronShuriken_Description, IronShuriken_Description_Pointer)
+  #incext ParseFile "Item Text/Iron Shuriken Description.txt"
+
+  RatSpirit_Name_Pointer:
+  setText(RatSpirit_Name, RatSpirit_Name_Pointer)
+  #incext ParseFile "Item Text/Rat Spirit Name.txt"
+  RatSpirit_Description_Pointer:
+  setText(RatSpirit_Description, RatSpirit_Description_Pointer)
+  #incext ParseFile "Item Text/Rat Spirit Description.txt"
+  OxSpirit_Name_Pointer:
+  setText(OxSpirit_Name, OxSpirit_Name_Pointer)
+  #incext ParseFile "Item Text/Ox Spirit Name.txt"
+  OxSpirit_Description_Pointer:
+  setText(OxSpirit_Description, OxSpirit_Description_Pointer)
+  #incext ParseFile "Item Text/Ox Spirit Description.txt"
+
+  Dragonstone_Name_Pointer:
+  setText(Dragonstone_Name, Dragonstone_Name_Pointer)
+  #incext ParseFile "Item Text/Dragonstone Name.txt"
+  Dragonstone_Description_Pointer:
+  setText(Dragonstone_Description, Dragonstone_Description_Pointer)
+  #incext ParseFile "Item Text/Dragonstone Description.txt"
+  Beaststone_Name_Pointer:
+  setText(Beaststone_Name, Beaststone_Name_Pointer)
+  #incext ParseFile "Item Text/Beaststone Name.txt"
+  Beaststone_Description_Pointer:
+  setText(Beaststone_Description, Beaststone_Description_Pointer)
+  #incext ParseFile "Item Text/Beaststone Description.txt"
+
+  BloomFestal_Name_Pointer:
+  setText(BloomFestal_Name, BloomFestal_Name_Pointer)
+  #incext ParseFile "Item Text/Bloom Festal Name.txt"
+  BloomFestal_Description_Pointer:
+  setText(BloomFestal_Description, BloomFestal_Description_Pointer)
+  #incext ParseFile "Item Text/Bloom Festal Description.txt"
+  SunFestal_Name_Pointer:
+  setText(SunFestal_Name, SunFestal_Name_Pointer)
+  #incext ParseFile "Item Text/Sun Festal Name.txt"
+  SunFestal_Description_Pointer:
+  setText(SunFestal_Description, SunFestal_Description_Pointer)
+  #incext ParseFile "Item Text/Sun Festal Description.txt"
+  
+  Tinder_Name_Pointer:
+  setText(Tinder_Name, Tinder_Name_Pointer)
+  #incext ParseFile "Item Text/Tinder Name.txt"
+  Tinder_Description_Pointer:
+  setText(Tinder_Description, Tinder_Description_Pointer)
+  #incext ParseFile "Item Text/Tinder Description.txt"
+
+
+//Prologue Text
+  Prologue_WM_Text_Pointer:
+  setText(Prologue_WM_Text, Prologue_WM_Text_Pointer)
+  #incext ParseFile "Prologue Text/World Map Text.txt"
+  
+  Prologue_Text_1_Pointer:
+  setText(Prologue_Text_1, Prologue_Text_1_Pointer)
+  #incext ParseFile "Prologue Text/Prologue Text 1.txt"
+  
+  Prologue_Text_2_Pointer:
+  setText(Prologue_Text_2, Prologue_Text_2_Pointer)
+  #incext ParseFile "Prologue Text/Prologue Text 2.txt"
+  
+  Prologue_Text_3_Pointer:
+  setText(Prologue_Text_3, Prologue_Text_3_Pointer)
+  #incext ParseFile "Prologue Text/Prologue Text 3.txt"
+  
+  Prologue_Text_4_Pointer:
+  setText(Prologue_Text_4, Prologue_Text_4_Pointer)
+  #incext ParseFile "Prologue Text/Prologue Text 4.txt"
+  
+  Prologue_Text_5_Pointer:
+  setText(Prologue_Text_5, Prologue_Text_5_Pointer)
+  #incext ParseFile "Prologue Text/Prologue Text 5.txt"
+  
+  Prologue_Text_Village_Pointer:
+  setText(Prologue_Text_Village, Prologue_Text_Village_Pointer)
+  #incext ParseFile "Prologue Text/Prologue Text Village.txt"
+  
+
+  PrologueGeneric_Name_Pointer:
+  setText(PrologueGeneric_Name, PrologueGeneric_Name_Pointer)
+  #incext ParseFile "Prologue Text/PrologueGeneric Name.txt"
+  
+  PrologueGeneric_Description_Pointer:
+  setText(PrologueGeneric_Description, PrologueGeneric_Description_Pointer)
+  #incext ParseFile "Prologue Text/PrologueGeneric Description.txt"
+  
+
+  Prologue_Goal_Pointer:
+  setText(Prologue_Goal, Prologue_Goal_Pointer)
+  #incext ParseFile "Prologue Text/Goal Text.txt"
+  
+  Prologue_Objective_Pointer:
+  setText(Prologue_Objective, Prologue_Objective_Pointer)
+  #incext ParseFile "Prologue Text/Objective Text.txt"
+
+
+
+//ChOne Text
+  ChOne_Text_1_Pointer:
+  setText(ChOne_Text_1, ChOne_Text_1_Pointer)
+  #incext ParseFile "ChOne Text/ChOne Text 1.txt"
+  
+  ChOne_Text_2_Pointer:
+  setText(ChOne_Text_2, ChOne_Text_2_Pointer)
+  #incext ParseFile "ChOne Text/ChOne Text 2.txt"
+  
+  ChOne_Text_3_Pointer:
+  setText(ChOne_Text_3, ChOne_Text_3_Pointer)
+  #incext ParseFile "ChOne Text/ChOne Text 3.txt"
+  
+  ChOne_Text_4_Pointer:
+  setText(ChOne_Text_4, ChOne_Text_4_Pointer)
+  #incext ParseFile "ChOne Text/ChOne Text 4.txt"
+  
+  ChOne_Text_5_Pointer:
+  setText(ChOne_Text_5, ChOne_Text_5_Pointer)
+  #incext ParseFile "ChOne Text/ChOne Text 5.txt"
+  
+  ChOne_Text_6_Pointer:
+  setText(ChOne_Text_6, ChOne_Text_6_Pointer)
+  #incext ParseFile "ChOne Text/ChOne Text 6.txt"
+  
+  ChOne_Text_7_Pointer:
+  setText(ChOne_Text_7, ChOne_Text_7_Pointer)
+  #incext ParseFile "ChOne Text/ChOne Text 7.txt"
+  
+  ChOne_Text_8_Pointer:
+  setText(ChOne_Text_8, ChOne_Text_8_Pointer)
+  #incext ParseFile "ChOne Text/ChOne Text 8.txt"
+  
+  ChOne_Text_9_Pointer:
+  setText(ChOne_Text_9, ChOne_Text_9_Pointer)
+  #incext ParseFile "ChOne Text/ChOne Text 9.txt"
+  
+  ChOne_Text_10_Pointer:
+  setText(ChOne_Text_10, ChOne_Text_10_Pointer)
+  #incext ParseFile "ChOne Text/ChOne Text 10.txt"
+  
+  ChOne_Text_11_Pointer:
+  setText(ChOne_Text_11, ChOne_Text_11_Pointer)
+  #incext ParseFile "ChOne Text/ChOne Text 11.txt"
+  
+  ChOne_Text_12_Pointer:
+  setText(ChOne_Text_12, ChOne_Text_12_Pointer)
+  #incext ParseFile "ChOne Text/ChOne Text 12.txt"
+  
+  ChOne_Text_13_Pointer:
+  setText(ChOne_Text_13, ChOne_Text_13_Pointer)
+  #incext ParseFile "ChOne Text/ChOne Text 13.txt"
+  
+  ChOne_Text_14_Pointer:
+  setText(ChOne_Text_14, ChOne_Text_14_Pointer)
+  #incext ParseFile "ChOne Text/ChOne Text 14.txt"
+  
+  ChOne_Goal_Pointer:
+  setText(ChOne_Goal, ChOne_Goal_Pointer)
+  #incext ParseFile "ChOne Text/Goal Text.txt"
+  
+  ChOne_Objective_Pointer:
+  setText(ChOne_Objective, ChOne_Objective_Pointer)
+  #incext ParseFile "ChOne Text/Objective Text.txt"

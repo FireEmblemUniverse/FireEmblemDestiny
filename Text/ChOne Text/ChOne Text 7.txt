@@ -1,0 +1,33 @@
+[.v....][LoadArchPortrait]
+
+[.....v][LoadAshPortrait]
+
+[...v..][LoadColorzPortrait]
+[ToggleSmile]
+Yaaay! All of the[N]
+bandits are dead![A]
+[ToggleSmile]
+
+[.v....]
+I don't know if that's[N]
+something you should be[AN]
+announcing so cheerfully.[A]
+
+[.....v]
+What are you going on[N]
+about, silly Arch?[A]
+
+[.v....]
+... Ugh, never mind. I[N]
+just need to find Kaga[AN]
+and end this already.[A]
+[ClearFace]
+
+[.....v][ClearFace]
+[..v...][LoadAshPortrait]
+Whew. He's such a handful.[A]
+
+[...v..]
+Yeah. We better see[N]
+what he's up to.[A]
+[X]
