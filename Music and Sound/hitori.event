@@ -1,0 +1,725 @@
+//Event file generated from Sappy .s format.
+	#include "MPlayDef.event"
+
+	#define	hitori_grp  voicegroup000
+	#define	hitori_pri  0
+	#define	hitori_rev  0
+	#define	hitori_mvl  127
+	#define	hitori_key  0
+	#define	hitori_tbs  1
+	#define	hitori_exg  0
+	#define	hitori_cmp  1
+
+	// .rodata
+	//	hitori
+	ALIGN 4
+
+//**************** Track 1 (Midi-Chn.1) ****************//
+
+hitori_1:
+	BYTE	KEYSH   hitori_key+0
+// 000   ----------------------------------------
+	BYTE	TEMPO   115*hitori_tbs/2
+	BYTE		VOICE   52
+	BYTE		VOL     100*hitori_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE	W72
+// 001   ----------------------------------------
+	BYTE	W72
+// 002   ----------------------------------------
+	BYTE	W72
+// 003   ----------------------------------------
+	BYTE	W72
+// 004   ----------------------------------------
+hitori_1_004:
+	BYTE		N44     Dn4   v052
+	BYTE		N44     An4 
+	BYTE	W48
+	BYTE		N11     Gn4 
+	BYTE	W12
+	BYTE		        Cn5 
+	BYTE	W12
+	BYTE	PEND
+// 005   ----------------------------------------
+hitori_1_005:
+	BYTE		N44     Cn4   v052
+	BYTE		N44     An4 
+	BYTE	W48
+	BYTE		N11     Gn4 
+	BYTE	W12
+	BYTE		        Cn5 
+	BYTE	W12
+	BYTE	PEND
+// 006   ----------------------------------------
+hitori_1_006:
+	BYTE		N32     As3   v052
+	BYTE		N32     An4 
+	BYTE	W36
+	BYTE		        Dn4 
+	BYTE	W36
+	BYTE	PEND
+// 007   ----------------------------------------
+hitori_1_007:
+	BYTE		N22     Dn4   v052
+	BYTE		N22     Gn4 
+	BYTE	W24
+	BYTE		        Dn4 
+	BYTE		N22     Fn4 
+	BYTE	W24
+	BYTE		        Cn4 
+	BYTE		N22     En4 
+	BYTE	W24
+	BYTE	PEND
+// 008   ----------------------------------------
+hitori_1_008:
+	BYTE		N44     As2   v052
+	BYTE		N44     Dn4 
+	BYTE	W48
+	BYTE		N11     Cn4 
+	BYTE	W12
+	BYTE		        Gn4 
+	BYTE	W12
+	BYTE	PEND
+// 009   ----------------------------------------
+	BYTE		N44     Cn3 
+	BYTE		N44     Dn4 
+	BYTE	W48
+	BYTE		N22     Cn4 
+	BYTE	W24
+// 010   ----------------------------------------
+	BYTE		N44     As2 
+	BYTE		N44     Dn4 
+	BYTE	W48
+	BYTE		N11     An4 
+	BYTE	W12
+	BYTE		        Gn4 
+	BYTE	W12
+// 011   ----------------------------------------
+	BYTE		N32     Cn3 
+	BYTE		N32     An4 
+	BYTE	W36
+	BYTE		        Cn3 
+	BYTE		N32     En4 
+	BYTE	W36
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	hitori_1_004
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	hitori_1_005
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	hitori_1_006
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	hitori_1_007
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	hitori_1_008
+// 017   ----------------------------------------
+	BYTE		N44     As2   v052
+	BYTE		N44     Dn4 
+	BYTE	W48
+	BYTE		N22     Gn3 
+	BYTE		N22     Cn4 
+	BYTE	W24
+// 018   ----------------------------------------
+	BYTE		TIE     An3 
+	BYTE		TIE     Dn4 
+	BYTE	W72
+// 019   ----------------------------------------
+	BYTE	W40
+	BYTE	W01
+	BYTE		EOT     An3 
+	BYTE		        Dn4 
+	BYTE	W07
+	BYTE		N22     Dn4   v080
+	BYTE		N22     An4 
+	BYTE	W24
+// 020   ----------------------------------------
+	BYTE		N32     Fn4 
+	BYTE		N32     Dn5 
+	BYTE	W36
+	BYTE		        Fn4 
+	BYTE		N32     Cn5 
+	BYTE	W36
+// 021   ----------------------------------------
+	BYTE		TIE     En4 
+	BYTE		TIE     An4 
+	BYTE	W72
+// 022   ----------------------------------------
+	BYTE	W40
+	BYTE	W01
+	BYTE		EOT     En4 
+	BYTE		        An4 
+	BYTE	W07
+	BYTE		N11     An4   v064
+	BYTE	W12
+	BYTE		        Bn4 
+	BYTE	W12
+// 023   ----------------------------------------
+	BYTE		N32     En4 
+	BYTE		N32     Cn5 
+	BYTE	W36
+	BYTE		        Dn4 
+	BYTE		N32     Bn4 
+	BYTE	W36
+// 024   ----------------------------------------
+	BYTE		TIE     Bn3 
+	BYTE		TIE     Gn4 
+	BYTE	W72
+// 025   ----------------------------------------
+	BYTE	W40
+	BYTE	W01
+	BYTE		EOT     Bn3 
+	BYTE		        Gn4 
+	BYTE	W07
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        An4 
+	BYTE	W12
+// 026   ----------------------------------------
+	BYTE		N32     Fn4 
+	BYTE		N32     As4 
+	BYTE	W36
+	BYTE		        En4 
+	BYTE		N32     An4 
+	BYTE	W36
+// 027   ----------------------------------------
+	BYTE		N22     As3 
+	BYTE		N22     Fn4 
+	BYTE	W24
+	BYTE		        Cn4 
+	BYTE		N22     Gn4 
+	BYTE	W24
+	BYTE		        An3 
+	BYTE		N22     En4 
+	BYTE	W24
+// 028   ----------------------------------------
+hitori_1_028:
+	BYTE		N11     Dn4   v064
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		N32     Gn3 
+	BYTE		N32     Dn4 
+	BYTE	W36
+	BYTE		N11     Gn3 
+	BYTE		N11     Cn4 
+	BYTE	W12
+	BYTE	PEND
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	hitori_1_028
+// 030   ----------------------------------------
+	BYTE		N11     Dn4   v064
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		N32     An3 
+	BYTE		N32     Dn4 
+	BYTE	W36
+	BYTE		N11     An3 
+	BYTE		N11     Cn4 
+	BYTE	W12
+// 031   ----------------------------------------
+	BYTE		        Dn4 
+	BYTE	W12
+	BYTE		        An4 
+	BYTE	W12
+	BYTE		N22     Dn4 
+	BYTE		N22     An4 
+	BYTE	W24
+	BYTE		        Cn4 
+	BYTE		N22     Gn4 
+	BYTE	W24
+// 032   ----------------------------------------
+	BYTE		N68     Cn4 
+	BYTE	W03
+	BYTE		        En4 
+	BYTE	W03
+	BYTE		N64     An4 
+	BYTE	W66
+// 033   ----------------------------------------
+	BYTE		N68     En4   v072
+	BYTE	W03
+	BYTE		        Fs4 
+	BYTE	W03
+	BYTE		N64     Bn4 
+	BYTE	W66
+// 034   ----------------------------------------
+	BYTE		N44     En4   v080
+	BYTE	W03
+	BYTE		        Gn4 
+	BYTE	W03
+	BYTE		N40     Bn4 
+	BYTE	W42
+	BYTE		N11     An3 
+	BYTE		N11     An4 
+	BYTE	W12
+	BYTE		        Dn4 
+	BYTE		N11     Dn5 
+	BYTE	W12
+// 035   ----------------------------------------
+	BYTE		N44     En4 
+	BYTE		N44     Gn4 
+	BYTE		N44     Bn4 
+	BYTE	W48
+	BYTE		N11     An3 
+	BYTE		N11     An4 
+	BYTE	W12
+	BYTE		        Dn4 
+	BYTE		N11     Dn5 
+	BYTE	W12
+// 036   ----------------------------------------
+	BYTE		N44     En4 
+	BYTE		N44     Gn4 
+	BYTE		N44     Bn4 
+	BYTE	W48
+	BYTE		N22     En4 
+	BYTE		N22     Gn4 
+	BYTE		N22     Bn4 
+	BYTE	W24
+// 037   ----------------------------------------
+hitori_1_037:
+	BYTE		N22     En4   v080
+	BYTE		N22     An4 
+	BYTE	W24
+	BYTE		        Dn4 
+	BYTE		N22     Gn4 
+	BYTE	W24
+	BYTE		        Cs4 
+	BYTE		N22     Fs4 
+	BYTE	W24
+	BYTE	PEND
+// 038   ----------------------------------------
+hitori_1_038:
+	BYTE		N44     Gn3   v080
+	BYTE		N44     Cn4 
+	BYTE		N44     En4 
+	BYTE	W48
+	BYTE		N11     Dn3 
+	BYTE		N11     Dn4 
+	BYTE	W12
+	BYTE		        Bn3 
+	BYTE		N11     Bn4 
+	BYTE	W12
+	BYTE	PEND
+// 039   ----------------------------------------
+	BYTE		N44     Gn3 
+	BYTE		N44     Cn4 
+	BYTE		N44     En4 
+	BYTE	W48
+	BYTE		N22     An3 
+	BYTE		N22     Dn4 
+	BYTE	W24
+// 040   ----------------------------------------
+	BYTE		N44     Gn3 
+	BYTE		N44     Cn4 
+	BYTE		N44     En4 
+	BYTE	W48
+	BYTE		N11     Bn3 
+	BYTE		N11     Bn4 
+	BYTE	W12
+	BYTE		        An3 
+	BYTE		N11     An4 
+	BYTE	W12
+// 041   ----------------------------------------
+	BYTE		N68     En4 
+	BYTE		N68     Fs4 
+	BYTE		N68     Bn4 
+	BYTE	W72
+// 042   ----------------------------------------
+hitori_1_042:
+	BYTE		N44     En3   v080
+	BYTE		N44     Gn3 
+	BYTE		N44     Bn3 
+	BYTE	W48
+	BYTE		N11     An2 
+	BYTE		N11     An3 
+	BYTE	W12
+	BYTE		        Dn3 
+	BYTE		N11     Dn4 
+	BYTE	W12
+	BYTE	PEND
+// 043   ----------------------------------------
+	BYTE	PATT
+	 POIN2	hitori_1_042
+// 044   ----------------------------------------
+	BYTE		N68     En3   v080
+	BYTE		N68     Gn3 
+	BYTE		N68     Bn3 
+	BYTE	W72
+// 045   ----------------------------------------
+	BYTE	PATT
+	 POIN2	hitori_1_037
+// 046   ----------------------------------------
+	BYTE	PATT
+	 POIN2	hitori_1_038
+// 047   ----------------------------------------
+	BYTE		N44     Gn4   v080
+	BYTE		N44     Bn4 
+	BYTE		N44     En5 
+	BYTE	W48
+	BYTE		N22     An4 
+	BYTE		N22     Dn5 
+	BYTE	W24
+// 048   ----------------------------------------
+	BYTE		TIE     Gn4 
+	BYTE		TIE     Bn4 
+	BYTE		TIE     En5 
+	BYTE	W72
+// 049   ----------------------------------------
+	BYTE	W64
+	BYTE		EOT     Gn4 
+	BYTE		        Bn4 
+	BYTE		        En5 
+	BYTE	FINE
+
+//**************** Track 2 (Midi-Chn.2) ****************//
+
+hitori_2:
+	BYTE	KEYSH   hitori_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   2
+	BYTE		VOL     100*hitori_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		N11     Dn2   v052
+	BYTE	W12
+	BYTE		        An2 
+	BYTE	W12
+	BYTE		        En3 
+	BYTE	W12
+	BYTE		N32     Fn3 
+	BYTE	W36
+// 001   ----------------------------------------
+hitori_2_001:
+	BYTE		N11     Dn2   v052
+	BYTE	W12
+	BYTE		        An2 
+	BYTE	W12
+	BYTE		        En3 
+	BYTE	W12
+	BYTE		N32     Fn3 
+	BYTE	W36
+	BYTE	PEND
+// 002   ----------------------------------------
+	BYTE	PATT
+	 POIN2	hitori_2_001
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	hitori_2_001
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	hitori_2_001
+// 005   ----------------------------------------
+hitori_2_005:
+	BYTE		N11     Cn2   v052
+	BYTE	W12
+	BYTE		        An2 
+	BYTE	W12
+	BYTE		        En3 
+	BYTE	W12
+	BYTE		N32     Fn3 
+	BYTE	W36
+	BYTE	PEND
+// 006   ----------------------------------------
+hitori_2_006:
+	BYTE		N11     As1   v052
+	BYTE	W12
+	BYTE		        Fn2 
+	BYTE	W12
+	BYTE		        Cn3 
+	BYTE	W12
+	BYTE		N32     Dn3 
+	BYTE	W36
+	BYTE	PEND
+// 007   ----------------------------------------
+hitori_2_007:
+	BYTE		N44     An1   v052
+	BYTE	W48
+	BYTE		N22     Cn2 
+	BYTE	W24
+	BYTE	PEND
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	hitori_2_006
+// 009   ----------------------------------------
+hitori_2_009:
+	BYTE		N11     Cn2   v052
+	BYTE	W12
+	BYTE		        Gn2 
+	BYTE	W12
+	BYTE		        Dn3 
+	BYTE	W12
+	BYTE		N32     En3 
+	BYTE	W36
+	BYTE	PEND
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	hitori_2_006
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	hitori_2_009
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	hitori_2_001
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	hitori_2_005
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	hitori_2_006
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	hitori_2_007
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	hitori_2_006
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	hitori_2_009
+// 018   ----------------------------------------
+	BYTE		N22     Dn2   v052
+	BYTE	W24
+	BYTE		        An2 
+	BYTE	W24
+	BYTE		        Cn3 
+	BYTE	W24
+// 019   ----------------------------------------
+	BYTE		N68     Dn3 
+	BYTE	W72
+// 020   ----------------------------------------
+	BYTE		N11     As1   v080
+	BYTE	W12
+	BYTE		        Fn2 
+	BYTE	W12
+	BYTE		        As2 
+	BYTE	W12
+	BYTE		N32     As1 
+	BYTE		N32     As2 
+	BYTE	W36
+// 021   ----------------------------------------
+	BYTE		N68     Cn2 
+	BYTE		N68     Cn3 
+	BYTE	W72
+// 022   ----------------------------------------
+	BYTE		N11     Cn2   v072
+	BYTE	W12
+	BYTE		        Gn2 
+	BYTE	W12
+	BYTE		        Cn3   v068
+	BYTE	W12
+	BYTE		        Gn2 
+	BYTE	W12
+	BYTE		N22     Cn2   v064
+	BYTE		N22     Cn3 
+	BYTE	W24
+// 023   ----------------------------------------
+	BYTE		N11     An1 
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		        An2 
+	BYTE	W12
+	BYTE		N32     An1 
+	BYTE		N32     An2 
+	BYTE	W36
+// 024   ----------------------------------------
+	BYTE		N68     Gn1 
+	BYTE		N68     Gn2 
+	BYTE	W72
+// 025   ----------------------------------------
+	BYTE		N11     Gn1 
+	BYTE	W12
+	BYTE		        Dn2 
+	BYTE	W12
+	BYTE		        Gn2 
+	BYTE	W12
+	BYTE		        Dn2 
+	BYTE	W12
+	BYTE		N22     Gn1 
+	BYTE		N22     Gn2 
+	BYTE	W24
+// 026   ----------------------------------------
+	BYTE		N11     Fn1 
+	BYTE	W12
+	BYTE		        Cn2 
+	BYTE	W12
+	BYTE		        Fn2 
+	BYTE	W12
+	BYTE		        Cn2 
+	BYTE	W12
+	BYTE		N22     Fn1 
+	BYTE		N22     Fn2 
+	BYTE	W24
+// 027   ----------------------------------------
+	BYTE		        Fn1 
+	BYTE		N22     Fn2 
+	BYTE	W24
+	BYTE		        Fn1 
+	BYTE		N22     Fn2 
+	BYTE	W24
+	BYTE		        Fn1 
+	BYTE		N22     Fn2 
+	BYTE	W24
+// 028   ----------------------------------------
+hitori_2_028:
+	BYTE		N11     As1   v064
+	BYTE	W12
+	BYTE		        Fn2 
+	BYTE	W12
+	BYTE		        As2 
+	BYTE	W12
+	BYTE		        Fn2 
+	BYTE	W12
+	BYTE		        As2 
+	BYTE	W12
+	BYTE		        Fn2 
+	BYTE	W12
+	BYTE	PEND
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	hitori_2_028
+// 030   ----------------------------------------
+hitori_2_030:
+	BYTE		N11     Cn2   v064
+	BYTE	W12
+	BYTE		        Gn2 
+	BYTE	W12
+	BYTE		        Cn3 
+	BYTE	W12
+	BYTE		        Gn2 
+	BYTE	W12
+	BYTE		        Cn3 
+	BYTE	W12
+	BYTE		        Gn2 
+	BYTE	W12
+	BYTE	PEND
+// 031   ----------------------------------------
+	BYTE	PATT
+	 POIN2	hitori_2_030
+// 032   ----------------------------------------
+	BYTE		N68     Fn2   v064
+	BYTE	W03
+	BYTE		        As2 
+	BYTE	W68
+	BYTE	W01
+// 033   ----------------------------------------
+	BYTE		        Fs2   v072
+	BYTE	W03
+	BYTE		        Bn2 
+	BYTE	W68
+	BYTE	W01
+// 034   ----------------------------------------
+hitori_2_034:
+	BYTE		N11     Cn1   v080
+	BYTE	W12
+	BYTE		        Gn1 
+	BYTE	W12
+	BYTE		        Cn2 
+	BYTE	W12
+	BYTE		        Gn1 
+	BYTE	W12
+	BYTE		        Cn2 
+	BYTE	W12
+	BYTE		        Gn1 
+	BYTE	W12
+	BYTE	PEND
+// 035   ----------------------------------------
+hitori_2_035:
+	BYTE		N11     Dn1   v080
+	BYTE	W12
+	BYTE		        An1 
+	BYTE	W12
+	BYTE		        Dn2 
+	BYTE	W12
+	BYTE		        An1 
+	BYTE	W12
+	BYTE		        Dn2 
+	BYTE	W12
+	BYTE		        An1 
+	BYTE	W12
+	BYTE	PEND
+// 036   ----------------------------------------
+hitori_2_036:
+	BYTE		N11     En1   v080
+	BYTE	W12
+	BYTE		        Bn1 
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		        Bn1 
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		        Bn1 
+	BYTE	W12
+	BYTE	PEND
+// 037   ----------------------------------------
+hitori_2_037:
+	BYTE		N44     Bn0   v080
+	BYTE		N44     Bn1 
+	BYTE	W48
+	BYTE		N22     Dn1 
+	BYTE		N22     Dn2 
+	BYTE	W24
+	BYTE	PEND
+// 038   ----------------------------------------
+	BYTE	PATT
+	 POIN2	hitori_2_034
+// 039   ----------------------------------------
+	BYTE	PATT
+	 POIN2	hitori_2_035
+// 040   ----------------------------------------
+	BYTE	PATT
+	 POIN2	hitori_2_034
+// 041   ----------------------------------------
+	BYTE	PATT
+	 POIN2	hitori_2_035
+// 042   ----------------------------------------
+	BYTE	PATT
+	 POIN2	hitori_2_034
+// 043   ----------------------------------------
+	BYTE	PATT
+	 POIN2	hitori_2_035
+// 044   ----------------------------------------
+	BYTE	PATT
+	 POIN2	hitori_2_036
+// 045   ----------------------------------------
+	BYTE	PATT
+	 POIN2	hitori_2_037
+// 046   ----------------------------------------
+	BYTE	PATT
+	 POIN2	hitori_2_034
+// 047   ----------------------------------------
+	BYTE	PATT
+	 POIN2	hitori_2_035
+// 048   ----------------------------------------
+	BYTE		N22     En1   v080
+	BYTE	W24
+	BYTE		        Bn1 
+	BYTE	W24
+	BYTE		        Dn2 
+	BYTE	W24
+// 049   ----------------------------------------
+	BYTE		N68     En1 
+	BYTE		N68     En2 
+	BYTE	W68
+	BYTE	FINE
+
+//******************************************************//
+	ALIGN 4
+
+hitori:
+	BYTE	2	// NumTrks
+	BYTE	0	// NumBlks
+	BYTE	hitori_pri	// Priority
+	BYTE	hitori_rev	// Reverb.
+
+	POIN2	hitori_grp
+
+	POIN2	hitori_1
+	POIN2	hitori_2
+
+	
