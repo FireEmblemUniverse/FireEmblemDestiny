@@ -1,0 +1,9 @@
+
+#define ChOne_Vein1 0x1
+#define ChOne_Vein2 0x2
+#define ChOne_Vein3 0x3
+#define ChOne_Vein4 0x4
+#define ChOne_Vein5 0x5
+
+
+

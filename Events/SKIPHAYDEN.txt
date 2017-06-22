@@ -1,0 +1,31 @@
+
+////////////////////////////////////////////////////
+//                                                //
+// Disassembled with Nintenlord's Event Assembler //
+// Version: 9.10.4713.28131                       //
+// Game: FE8                                      //
+// File: SoAinSS.gba                              //
+// Offset: $A3C6EC                                //
+//                                                //
+////////////////////////////////////////////////////
+
+
+
+ORG $A3C860
+IFET 0x88
+IFEQUAL 0x1 0xC 0x0
+CALL NewEvents
+ENDB
+
+ORG 0xPick a god damn offset
+
+NewEvents:
+WM_LOADLOCATION2 0x0 0x0 0x0 //Might as well load Border Mulan here (optional)
+WM_LOADLOCATION2 0x0 0x1 0x0 //Like CREATENEXTDESTINATION except silent and instant
+WM_SETDESTINATION 0x0 0x1 0x0
+_0xA640 0x0 0x0 0x01       //like MOVESPRITETO except silent and instant
+SKIPWN
+ENDA
+
+//The next line is for re-assembling purposes. Do not delete!
+MESSAGE Original ending offset is $A3C79C and the new ending offset is CURRENTOFFSET

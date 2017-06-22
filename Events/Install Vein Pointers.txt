@@ -1,0 +1,9 @@
+#include "../Destiny Definitions.txt"
+
+//No longer used, include with chapter events instead for scoping purposes
+
+VeinEffect(ChOne_Vein1, ChOne_Vein1_Effect)
+VeinEffect(ChOne_Vein2, ChOne_Vein2_Effect)
+VeinEffect(ChOne_Vein3, ChOne_Vein3_Effect)
+VeinEffect(ChOne_Vein4, ChOne_Vein4_Effect)
+VeinEffect(ChOne_Vein5, ChOne_Vein5_Effect)

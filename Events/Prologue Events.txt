@@ -1,0 +1,258 @@
+//Made by Camtech075 of SerenesForest
+#include EAstdlib.event
+#include "../Destiny Definitions.txt"
+
+#ifndef InlineEvents
+    MESSAGE "Inserting prologue events."
+    #ifndef PrologueEventsLocation
+        #define PrologueEventsLocation 0xEF00000 //Change
+    #else
+        MESSAGE "Prologue events at" PrologueEventsLocation
+    #endif
+
+    #define PrologueEvents 0x7
+    EventPointerTable(PrologueEvents,ThisChapter)
+
+    ORG PrologueEventsLocation
+    ThisChapter:
+#endif
+
+POIN Prologue_TurnBasedEvents
+POIN Prologue_CharacterBasedEvents
+POIN Prologue_LocationBasedEvents
+POIN Prologue_MiscBasedEvents
+POIN Prologue_Dunno Prologue_Dunno Prologue_Dunno
+POIN Prologue_Tutorial
+POIN Prologue_Ballista1 Prologue_Ballista2
+POIN Prologue_Units1 Prologue_Units1
+POIN $0 $0 $0 $0 $0 $0
+POIN Prologue_BeginningScene Prologue_EndingScene
+
+Prologue_TurnBasedEvents:
+TurnEventPlayer(0x00,Prologue_Reif1Event,3)
+TurnEventPlayer(0x00,Prologue_Reif2Event,5)
+#ifdef Debug
+TurnEventPlayer(0x00,Prologue_EndingScene,2) //Debugging
+#endif
+TURN
+
+Prologue_CharacterBasedEvents:
+CHAR
+
+Prologue_LocationBasedEvents:
+LOCA 0x0 Prologue_House1 [12,9] 0x10
+LOCA
+
+Prologue_MiscBasedEvents:
+CauseGameOverIfLordDies
+DefeatAll(Prologue_EndingScene)
+AFEV
+
+Prologue_Dunno:
+END_MAIN
+
+Prologue_Tutorial:
+END_MAIN
+
+Prologue_Ballista1:
+BLST
+
+Prologue_Ballista2:
+BLST
+
+ALIGN 4
+
+Prologue_Units1:
+UNIT
+
+Prologue_ArchUnit:
+UNIT Arch NohrPrince 0x00 Level(1, Ally, 0) [0x3,0xA] 0x0 0x00 0x00 0x00 [BreakableIronSword, Vulnerary] [0x0, 0x0] 0x0 0x0
+UNIT
+
+Prologue_AshColorz:
+UNIT Ash Troubadour 0x00 Level(3, Ally, 0) [0x2,0x9] 0x0 0x00 0x01 Prologue_AshMovement [BrassKatana, BloomFestal, Vulnerary] [0x0, 0x0] 0x0 0x0
+UNIT Colorz PegasusMage 0x00 Level(10, Ally, 0) [0x2,0x9] 0x0 0x00 0x01 Prologue_ColorzMovement [RatSpirit, OxSpirit] [0x0, 0x0] 0x0 0x0
+UNIT
+
+Prologue_AshMovement:
+REDA [0x3, 0x9] 0x0 0x10 0x0 0x0
+END_MAIN
+
+Prologue_ColorzMovement:
+REDA [0x2, 0xA] 0x0 0x12 0x0 0x4
+END_MAIN
+
+Prologue_ArchSleep:
+UNIT Arch 0x7B 0x00 Level(1, Ally, 0) [0x3,0xA] 0x0 0x00 0x00 0x00 [BreakableIronSword, Vulnerary] [0x0, 0x0] 0x0 0x0
+UNIT
+
+Prologue_Bosses:
+UNIT Batta Brigand 0x00 Level(5,Enemy,False) [0x13,0x00] 0x00 0x00 0x00 0x00 [IronClub,HandAxe] [0x00,0x03,0x00,0x00]
+UNIT Damas Fighter 0x00 Level(5,Enemy,False) [0x13,0x02] 0x02 0x00 0x00 0x00 [IronClub,HandAxe,Vulnerary] [0x00,0x03] 0x04 0x00
+UNIT
+
+Prologue_Generic1:
+UNIT PrologueGeneric2 Brigand 0x00 Level(3,Enemy,True) [19,1] 0x00 0x00 0x01 Prologue_Ban1Movement [BrassClub] [0x00,0x03,0x00,0x00]
+UNIT PrologueGeneric1 Brigand 0x00 Level(2,Enemy,True) [19,1] 0x00 0x00 0x01 Prologue_Ban2Movement [BrassClub] [0x00,0x00,0x04,0x00]
+UNIT PrologueGeneric2 Brigand 0x00 Level(3,Enemy,True) [19,1] 0x00 0x00 0x01 Prologue_Ban3Movement [BrassClub] [0x00,0x00,0x04,0x00]
+UNIT PrologueGeneric1 Brigand 0x00 Level(3,Enemy,True) [19,1] 0x00 0x00 0x01 Prologue_Ban4Movement [BrassClub] [0x00,0x03,0x00,0x00]
+UNIT PrologueGeneric3 Archer 0x00 Level(3,Enemy,True) [19,1] 0x00 0x00 0x01 Prologue_Ban5Movement [BrassYumi] [0x00,0x03] 0x00 0x00
+UNIT PrologueGeneric1 Brigand PrologueGeneric3 Level(3,Enemy,True) [19,1] 0x00 0x00 0x01 Prologue_Ban6Movement [BrassClub] [0x0D,0x03] 0x00 0x00
+UNIT PrologueGeneric2 Brigand PrologueGeneric3 Level(3,Enemy,True) [19,1] 0x00 0x00 0x01 Prologue_Ban7Movement [BrassClub] [0x0D,0x03] 0x00 0x00
+UNIT PrologueGeneric1 Brigand 0x00 Level(2,Enemy,True) [19,1] 0x00 0x00 0x01 Prologue_Ban9Movement [BrassClub] [0x00,0x03,0x00,0x00]
+UNIT PrologueGeneric1 Brigand 0x00 Level(3,Enemy,True) [19,1] 0x00 0x00 0x01 Prologue_Ban10Movement [BrassClub] [0x00,0x00,0x04,0x00]
+UNIT
+
+Prologue_Generic2:
+UNIT PrologueGeneric1 Archer 0x00 Level(2,Enemy,True) [19,1] 0x00 0x00 0x01 Prologue_Ban8Movement [BrassYumi] [0x00,0x00,0x04,0x00]
+UNIT
+
+Prologue_Ban1Movement:
+REDA [0xF, 0x6] 0x0 0x10 0x0 0x0
+END_MAIN
+Prologue_Ban2Movement:
+REDA [0xA, 0x9] 0x0 0x10 0x0 0x0
+END_MAIN
+Prologue_Ban3Movement:
+REDA [0x11, 0x8] 0x0 0x10 0x0 0x0
+END_MAIN
+Prologue_Ban4Movement:
+REDA [0xC, 0x5] 0x0 0x10 0x0 0x0
+END_MAIN
+Prologue_Ban5Movement:
+REDA [0x11, 0x2] 0x0 0x10 0x0 0x0
+END_MAIN
+Prologue_Ban6Movement:
+REDA [0x11, 0x1] 0x0 0x10 0x0 0x0
+END_MAIN
+Prologue_Ban7Movement:
+REDA [0x10, 0x0] 0x0 0x10 0x0 0x0
+END_MAIN
+Prologue_Ban8Movement:
+REDA [0x9, 0x1] 0x0 0x10 0x0 0x0
+END_MAIN
+Prologue_Ban9Movement:
+REDA [0x8, 0x3] 0x0 0x10 0x0 0x0
+END_MAIN
+Prologue_Ban10Movement:
+REDA [0xE, 0x2] 0x0 0x10 0x0 0x0
+END_MAIN
+
+Prologue_Reif1:
+UNIT PrologueGeneric1 Brigand 0x00 Level(3,Enemy,True) [0x1,0x0] 0x00 0x00 0x00 0x00 [BrassClub] [0x00,0x00,0x04,0x00]
+UNIT PrologueGeneric1 Brigand 0x00 Level(4,Enemy,True) [0x0,0x0] 0x00 0x00 0x00 0x00 [BrassClub] [0x00,0x00,0x04,0x00]
+UNIT
+
+Prologue_Reif2:
+UNIT PrologueGeneric1 Archer 0x00 Level(4,Enemy,True) [0x13,0x9] 0x00 0x00 0x01 Prologue_ArcherMovement [BrassYumi] [0x00,0x00,0x04,0x00]
+UNIT
+
+Prologue_ArcherMovement:
+REDA [0x12, 0x9] 0x0 0x10 0x0 0x0
+END_MAIN
+
+Prologue_BeginningScene:
+LOAD1 0x1 Prologue_ArchSleep
+MUSC 0x48
+CAM1 Arch
+FADU 0x8
+STAL 0xC0
+LOAD1 0x1 Prologue_AshColorz
+ENUN
+STAL 60
+TEXTSTART
+#define OpenPlains 0x18
+SetBackground(OpenPlains)
+TEXTSHOW Prologue_Text_1 //”we have to do something…”, stops at end of arch’s rant
+TEXTEND
+ClearBackground
+MUSC 0x7FFF
+STAL 100
+DISA 0x01
+SOUN 0x00EA
+LOAD1 0x1 Prologue_ArchUnit //Arch gets up
+STAL 100
+MUSC 0x002B
+TEXTSTART
+SetBackground(OpenPlains)
+TEXTSHOW Prologue_Text_2 //Arch’s rant
+TEXTEND
+ClearBackground
+MUSC 0x7FFF //Was MUSCFAST
+STAL 30
+MUSC 0x00E7 //a brigand yell
+TEXTCONT
+TEXTEND
+STAL 30
+MUSC 0x001A
+TEXTSTART
+SetBackground(OpenPlains)
+TEXTSHOW Prologue_Text_3 //”Oh no, bandits” . . . “Literally how”
+TEXTEND
+ClearBackground
+STAL 60
+CAM1 [0xC, 0x3]
+LOAD1 0x1 Prologue_Bosses
+FlashCursor(Batta, 0x30)
+STAL 0x10
+FlashCursor(Damas, 0x30)
+TEXTSTART
+SetBackground(0x1D) //Maybe a forest-y background?
+TEXTSHOW Prologue_Text_4 //”Oh yeah, . . .”
+TEXTEND
+FADU 16
+ClearBackground
+MOVE 0x18 Damas [7,1]
+STAL 50
+LOAD1 0x1 Prologue_Generic1
+STAL 30
+LOAD1 0x1 Prologue_Generic2
+ENUN
+EVBIT_T 0x7
+ENDB
+
+Prologue_EndingScene:
+STAL 0x01
+MUSC 0x0031
+TEXTSTART
+SetBackground(0x18) //Fields
+TEXTSTART
+TEXTSHOW Prologue_Text_5
+TEXTEND
+MUSC 0x7FFF
+STAL3 0x20
+SOUN DragonVeinSFXID
+STAL3 0xE8
+MUSC 0x2D
+TEXTCONT
+TEXTEND
+FADI 0x8
+EVBIT_T 0x7
+MNC2 0x1 //Edit to MNCH once we have world map events working.
+ENDB
+
+//Events
+Prologue_Reif1Event:
+ReinforcementEvent(Prologue_Reif1)
+EVBIT_T 0x7
+ENDB
+
+Prologue_Reif2Event:
+ReinforcementEvent(Prologue_Reif2)
+EVBIT_T 0x7
+ENDB
+
+Prologue_House1:
+MUNO
+SetBackground(0x0)
+TEXTSTART
+TEXTSHOW Prologue_Text_Village
+TEXTEND
+ClearBackground
+MUSI
+EVBIT_T 0x7
+ENDA
+
+#ifndef InlineEvents
+MESSAGE Events end at offset currentOffset
+#endif

@@ -1,0 +1,14 @@
+{
+  #define PrologueEventsID 0x7
+  EventPointerTable(PrologueEventsID,PrologueEventsLocation)
+  ALIGN 4
+  PrologueEventsLocation:
+  #include "Prologue Events.txt"
+}
+{
+  #define ChOneEventsID 0xA
+  EventPointerTable(ChOneEventsID,ChOneEventsLocation)
+  ALIGN 4
+  ChOneEventsLocation:
+  #include "Chapter 1 Events.txt"
+}

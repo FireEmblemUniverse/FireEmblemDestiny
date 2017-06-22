@@ -1,0 +1,51 @@
+#include "../Destiny Definitions.txt"
+
+////////////////////////////////////////////////////
+//                                                //
+// Disassembled with Nintenlord's Event Assembler //
+// Version: 9.10.4713.28131                       //
+// Game: FE8                                      //
+// File: FE8.gba                                  //
+// Offset: $A39768                                //
+//                                                //
+////////////////////////////////////////////////////
+
+
+#ifndef InlineEvents
+ORG $A39768
+#else
+
+WorldMapPointerTable(PrologueWMEventsID,WM_Events)
+WM_Events:
+#endif
+
+EVBIT_MODIFY 0x1
+_0xC220
+WM_SPAWNLORD 0x0 0x0 0x1 0x0 0x0
+WM_CENTERCAMONLORD
+MUSCFAST 0x7FFF
+STAL 32
+MUSC 0x4
+WM_SHOWDRAWNMAP 0x0 0x0 0x0 0x10 0x0
+STAL 2
+WM_FADEOUT 0x0 0x0 0x0
+WM_TEXTDECORATE
+EVBIT_MODIFY 0x0
+STAL 60
+WM_SHOWTEXTWINDOW 0x0 0x28 0x1
+WM_WAITFORTEXT
+WM_TEXTSTART
+WM_TEXT Prologue_WM_Text
+TEXTEND
+WM_REMOVETEXT
+STAL 2
+FADI 16
+SKIPWN
+WM_FXCLEAR1 0x0 0xFFFF 0xFFFF
+WM_FXCLEAR2 0x0 0xFFFF 0xFFFF
+ENDA
+
+#ifndef InlineEvents
+//The next line is for re-assembling purposes. Do not delete!
+MESSAGE Original ending offset is $A39D00 and the new ending offset is CURRENTOFFSET
+#endif
