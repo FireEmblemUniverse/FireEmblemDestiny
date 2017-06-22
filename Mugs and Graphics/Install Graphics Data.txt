@@ -3,58 +3,58 @@
 PUSH
 //In place, so no need to go to data.
 ORG WeaponIconOffset(BrassKatanaIcon)
-#incbin "Weapon Icons/Katana/Brass Katana.dmp"
+#incext Png2Dmp "Weapon Icons/Katana/BrassKatana.png"
 ORG WeaponIconOffset(IronKatanaIcon)
-#incbin "Weapon Icons/Katana/Iron Katana.dmp"
+#incext Png2Dmp "Weapon Icons/Katana/IronKatana.png"
 ORG WeaponIconOffset(SteelKatanaIcon)
-#incbin "Weapon Icons/Katana/Steel Katana.dmp"
+#incext Png2Dmp "Weapon Icons/Katana/SteelKatana.png"
 ORG WeaponIconOffset(SilverKatanaIcon)
-#incbin "Weapon Icons/Katana/Silver Katana.dmp"
+#incext Png2Dmp "Weapon Icons/Katana/SilverKatana.png"
 ORG WeaponIconOffset(IronSwordIcon)
-#incbin "Weapon Icons/Iron Sword.dmp"
+#incext Png2Dmp "Weapon Icons/IronSword.png"
 
 ORG WeaponIconOffset(BrassNaginataIcon)
-#incbin "Weapon Icons/Naginata/Brass Naginata.dmp"
+#incext Png2Dmp "Weapon Icons/Naginata/BrassNaginata.png"
 ORG WeaponIconOffset(IronNaginataIcon)
-#incbin "Weapon Icons/Naginata/Iron Naginata.dmp"
+#incext Png2Dmp "Weapon Icons/Naginata/IronNaginata.png"
 ORG WeaponIconOffset(SteelNaginataIcon)
-#incbin "Weapon Icons/Naginata/Steel Naginata.dmp"
+#incext Png2Dmp "Weapon Icons/Naginata/SteelNaginata.png"
 ORG WeaponIconOffset(SilverNaginataIcon)
-#incbin "Weapon Icons/Naginata/Silver Naginata.dmp"
+#incext Png2Dmp "Weapon Icons/Naginata/SilverNaginata.png"
 
 ORG WeaponIconOffset(BrassClubIcon)
-#incbin "Weapon Icons/Club/Brass Club.dmp"
+#incext Png2Dmp "Weapon Icons/Club/BrassClub.png"
 ORG WeaponIconOffset(IronClubIcon)
-#incbin "Weapon Icons/Club/Iron Club.dmp"
+#incext Png2Dmp "Weapon Icons/Club/IronClub.png"
 ORG WeaponIconOffset(SteelClubIcon)
-#incbin "Weapon Icons/Club/Steel Club.dmp"
+#incext Png2Dmp "Weapon Icons/Club/SteelClub.png"
 ORG WeaponIconOffset(SilverClubIcon)
-#incbin "Weapon Icons/Club/Silver Club.dmp"
+#incext Png2Dmp "Weapon Icons/Club/SilverClub.png"
 
 ORG WeaponIconOffset(RatSpiritIcon)
-#incbin "Weapon Icons/Scroll/Rat Spirit.dmp"
+#incext Png2Dmp "Weapon Icons/Scroll/RatSpirit.png"
 ORG WeaponIconOffset(OxSpiritIcon)
-#incbin "Weapon Icons/Scroll/Ox Spirit.dmp"
+#incext Png2Dmp "Weapon Icons/Scroll/OxSpirit.png"
 ORG WeaponIconOffset(TigerSpiritIcon)
-#incbin "Weapon Icons/Scroll/Tiger Spirit.dmp"
+#incext Png2Dmp "Weapon Icons/Scroll/TigerSpirit.png"
 ORG WeaponIconOffset(RabbitSpiritIcon)
-#incbin "Weapon Icons/Scroll/Rabbit Spirit.dmp"
+#incext Png2Dmp "Weapon Icons/Scroll/RabbitSpirit.png"
 
 ORG WeaponIconOffset(BrassShurikenIcon)
-#incbin "Weapon Icons/Shuriken/Brass Shuriken.dmp"
+#incext Png2Dmp "Weapon Icons/Shuriken/BrassShuriken.png"
 ORG WeaponIconOffset(IronShurikenIcon)
-#incbin "Weapon Icons/Shuriken/Iron Shuriken.dmp"
+#incext Png2Dmp "Weapon Icons/Shuriken/IronShuriken.png"
 ORG WeaponIconOffset(SteelShurikenIcon)
-#incbin "Weapon Icons/Shuriken/Steel Shuriken.dmp"
+#incext Png2Dmp "Weapon Icons/Shuriken/SteelShuriken.png"
 ORG WeaponIconOffset(SilverShurikenIcon)
-#incbin "Weapon Icons/Shuriken/Silver Shuriken.dmp"
+#incext Png2Dmp "Weapon Icons/Shuriken/SilverShuriken.png"
 ORG WeaponIconOffset(PebbleIcon)
-#incbin "Weapon Icons/Shuriken/Pebble.dmp"
+#incext Png2Dmp "Weapon Icons/Shuriken/Pebble.png"
 
 ORG WeaponIconOffset(DragonstoneIcon)
-#incbin "Weapon Icons/Stone/Dragonstone.dmp"
+#incext Png2Dmp "Weapon Icons/Stone/Dragonstone.png"
 ORG WeaponIconOffset(DragonstonePlusIcon)
-#incbin "Weapon Icons/Stone/Dragonstone+.dmp"
+#incext Png2Dmp "Weapon Icons/Stone/Dragonstone+.png"
 ORG WeaponIconOffset(BeaststoneIcon)
 #incext Png2Dmp "Weapon Icons/Stone/Beaststone.png"
 
@@ -63,11 +63,11 @@ ORG WeaponIconOffset(TinderIcon)
 
 
 ORG WeaponIconOffset(0x75)
-#incbin "Weapon Type Icons/Tome Icon.dmp" 
+#incext Png2Dmp "Weapon Type Icons/TomeIcon.png"
 ORG WeaponIconOffset(0x76)
-#incbin "Weapon Type Icons/Shuriken Icon.dmp" 
+#incext Png2Dmp "Weapon Type Icons/ShurikenIcon.png"
 ORG WeaponIconOffset(0x77)
-#incbin "Weapon Type Icons/Stone Icon.dmp" 
+#incext Png2Dmp "Weapon Type Icons/StoneIcon.png"
 
 //Title Screen scroll
 ORG $aacedc
@@ -92,6 +92,3 @@ Maid_Map_Standing:
 #incext Png2Dmp "Map Sprites/Maid Standing.png" --lz77
 Maid_Map_Moving:
 #incext Png2Dmp "Map Sprites/Maid Moving.png" --lz77
-
-
-
