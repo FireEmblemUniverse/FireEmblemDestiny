@@ -15,4 +15,4 @@
   setTileAnimations(0x1, 0x0, 0x0)
   EventPointerTable(ChOneMapID,ChOneMapLocation)
   ChOneMapLocation:
-  #incbin "ChOne Map.dmp"
+  #incbin "Chapter_1_data.dmp"
