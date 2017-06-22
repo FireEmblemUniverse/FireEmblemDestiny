@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="30" height="30" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="6C00A36E" tilewidth="16" tileheight="16">
+  <image source="Tilesets/FE8/6C00A36E.png" width="512" height="512"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="30" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1zEOgCAMBVCi52TyIA4ehIGTeDNj4mAaiq39rQwOf1MeFMVappRKJ0vi07tPm57jNYe3psVHmFofbUptL/fJ9nR7fuu6ff7GjVizdbyNRGojLIlJbZSrqXf0Wq37aV0zah7R5p/YrMp3I/KcpK6nnad2LTzdeuW0K+Oi7HqLpM5INwvGQrut/aQ9xCjf/9F6LW2duWfKs6/lzq1R/lkOEZ6HdA==
+  </data>
+ </layer>
+ <layer name="Tile Layer 3" width="30" height="30" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJzt0csJACAMBFFJm2Itad2rBI0gbLzMa2DyaQ0AAACvutX33P621+4onkHZ3e0XuaB7+6fyxj3Z98dvh2lunP1W0TvNUNGMf7u1JmyCC/4=
+  </data>
+ </layer>
+ <layer name="Tile Layer 4" width="30" height="30" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJztk0EKQCEIBcVz1lm8+l9EIJEQH56rmU25mvKpGQAAAAD8YbhZ+Dq7CL/fO90dbzh7etYK7+1/mSnud+VV5hzFDE/XequdUTlztjlHdabZs90dc7QdL64PcHEPHw==
+  </data>
+ </layer>
+ <layer name="Tile Layer 5" width="30" height="30" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJztlEEKACAIBKV/9pae0lfDg2Aeqssqwc4lvLTMCooQQgghhPxPb/mZs+1vBeaN9s/u13eq2XGuALHn6HKbUdmnvhHo/z1kZu3Vss0T5eqdhrsVyG5jp+MhawHViBCc
+  </data>
+ </layer>
+ <layer name="Tile Layer 2" width="30" height="30" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJztkkEKACAIBKWP95S+2ikSSSlorcMOePIw66IIIYQQQsgZrczJdEZuVBbts15kDztOvbuZwevXy4NgdfOgJnQe7VHOqHcEL/7aOrwsGT0jfb85IzpY5Tc5
+  </data>
+ </layer>
+ <objectgroup name="Object Layer 1" width="30" height="30">
+  <object x="337" y="321" width="13" height="14">
+   <ellipse/>
+  </object>
+  <object x="434" y="307" width="11" height="11">
+   <ellipse/>
+  </object>
+  <object x="273" y="448" width="11" height="12">
+   <ellipse/>
+  </object>
+  <object x="273" y="290" width="11" height="10"/>
+  <object x="386" y="291" width="11" height="10"/>
+  <object x="305" y="402" width="11" height="11"/>
+  <object x="402" y="403" width="11" height="11">
+   <ellipse/>
+  </object>
+ </objectgroup>
+</map>

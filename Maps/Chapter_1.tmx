@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="22" height="19" tilewidth="16" tileheight="16" nextobjectid="1">
+ <tileset firstgid="1" name="3C00CE3E" tilewidth="16" tileheight="16">
+  <image source="Tilesets/FE8/3C00CE3E.png" width="512" height="512"/>
+ </tileset>
+ <layer name="Main" width="22" height="19">
+  <properties>
+   <property name="Main" value=""/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxtVE1rVEEQnDeLSL5OetKTeDBEBUHy1s01C1EEP8D4Cwx6UvMbTERExHOOJkaDZPGsx1UT0Yi7GhQ9ywo5iOtNL1Yx1Wy/iYdiuqfndVdXz5tuDOFtEcJkLYQS+AB/CHhaDDAcU5yxy7Vq/GLcfY55+rDX3d6JWqrzCf4K1o+uLmOzwI7iv4H5mGx/rg50Ffd7tDsxxbpZP4xPiY99y5X+mLiRj8XHXA/k31Iub5sO60VVJ2ILeO98q+X5kk9DNRry606HKbfvV+YgV/oPsS4XVY05l1ZR5e/nUneaWA9lrcrtFezXwFHHmeupTM9G1r+f86zOec0ehRD+UONQzTv5Hz7jsEdilUPp+HvN9iF+iVqE3f2WGZ8eYi8Q2wxV3UpX32p8hn8QazMMuPCb7xkf+h3gHM59EW/fl9W3f2YCWMTZFXIAbij/npi035D+9EeB64h/dZwn3CzNH1Vuan0H584D95W/BSwA91TX9jZC6vFHSL2NxMHsrd8nIf0vq9g7AvsmsBc4Lf4vHTfqvwocAK9t7P2Ng1pbwDfn8xz/C87jWki8rio/c3dCykHsx5l36uE47JPAkvbfYO95TP6mOPWz94sz5myOAXPiy7753XCRvmkDt4Ge6nLueT17V+z9shqWv6cel6XBku467/0t4CdwBZgJ6Xxbe/Y2/Mpq8C18Ju22lcvrvaAcTem5BtxVjTnpu6N30f5D1hjXnRoqEt9FdxfY9zTsQ4gdBs7CPqOZX9Bs+nqTbbX3tCed7E61M/3sjjThz2vWvF+PgQfAP64i1jE=
+  </data>
+ </layer>
+ <layer name="Right Wall" width="22" height="19" visible="0">
+  <properties>
+   <property name="Height" value="2"/>
+   <property name="ID" value="0"/>
+   <property name="Width" value="2"/>
+   <property name="X" value="19"/>
+   <property name="Y" value="1"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYBj84DUjA4MpM/XNtQKaaU4Dc0fBKBgFo2AUEA8AUWEBnA==
+  </data>
+ </layer>
+ <layer name="Left Wall" width="22" height="19" visible="0">
+  <properties>
+   <property name="Height" value="2"/>
+   <property name="ID" value="1"/>
+   <property name="Width" value="2"/>
+   <property name="X" value="2"/>
+   <property name="Y" value="2"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYBia4DUjA4MpM/XNtQKaaU4Dc0fBKBgFo2AUYAcAMUUBnA==
+  </data>
+ </layer>
+ <layer name="Dragon Vein - Top Left Room" width="22" height="19" visible="0">
+  <properties>
+   <property name="Height" value="2"/>
+   <property name="ID" value="2"/>
+   <property name="Width" value="3"/>
+   <property name="X" value="6"/>
+   <property name="Y" value="3"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYBgF+MBqRgSmJrBkZmCwYobQo2AUjIJRMJIBAHZaAro=
+  </data>
+ </layer>
+ <layer name="Dragon Vein - Right Room" width="22" height="19" visible="0">
+  <properties>
+   <property name="Height" value="2"/>
+   <property name="ID" value="3"/>
+   <property name="Width" value="2"/>
+   <property name="X" value="20"/>
+   <property name="Y" value="6"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo4B2YDUjBFMbWDEzMFgyU9/cUTAKRgH9AQBmWQHS
+  </data>
+ </layer>
+ <layer name="Dragon Vein - Bottom Left Room" width="22" height="19" visible="0">
+  <properties>
+   <property name="Height" value="2"/>
+   <property name="ID" value="4"/>
+   <property name="Width" value="3"/>
+   <property name="X" value="1"/>
+   <property name="Y" value="17"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMNzAWkYGhtVQTE1wmYmB4TMThKYWAAAsRQSm
+  </data>
+ </layer>
+</map>
