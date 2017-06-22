@@ -1,0 +1,18 @@
+#define setTileset(chapter, objType, palette, tileConfig) "PUSH; ORG 0x8B0890 + 0x94*chapter + 4; SHORT objType; BYTE palette tileConfig; POP"
+#define setTileAnimations(chapter, anim1, anim2) "PUSH; ORG 0x8B0890 + 0x94*chapter + 9; BYTE anim1 anim2; POP"
+
+//Prologue
+  #define PrologueMapID 0x4
+  setTileset(0x0, 0x1, 0x2, 0x3) //really these should go with the map installer
+  setTileAnimations(0x0, 0x5, 0x0)
+  EventPointerTable(PrologueMapID,PrologueMapLocation)
+  PrologueMapLocation:
+  #incbin "Prologue Map.dmp"
+
+//Chapter 1
+  #define ChOneMapID 0x8
+  setTileset(0x1, 0x3C, 0xCE, 0x3E)
+  setTileAnimations(0x1, 0x0, 0x0)
+  EventPointerTable(ChOneMapID,ChOneMapLocation)
+  ChOneMapLocation:
+  #incbin "ChOne Map.dmp"
