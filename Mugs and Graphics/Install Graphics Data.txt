@@ -63,11 +63,11 @@ ORG WeaponIconOffset(TinderIcon)
 
 
 ORG WeaponIconOffset(0x75)
-#incext Png2Dmp "Weapon Type Icons/TomeIcon.png"
+#incbin "Weapon Type Icons/Tome Icon.dmp"
 ORG WeaponIconOffset(0x76)
-#incext Png2Dmp "Weapon Type Icons/ShurikenIcon.png"
+#incbin "Weapon Type Icons/Shuriken Icon.dmp"
 ORG WeaponIconOffset(0x77)
-#incext Png2Dmp "Weapon Type Icons/StoneIcon.png"
+#incbin "Weapon Type Icons/Stone Icon.dmp"
 
 //Title Screen scroll
 ORG $aacedc
