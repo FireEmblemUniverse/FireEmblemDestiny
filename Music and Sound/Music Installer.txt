@@ -1,0 +1,6 @@
+
+voicegroup000:
+#incbin "FE8_NI_Map.bin"
+
+SongTable(0x43,hitori,0)
+#include "hitori.event"
