@@ -1,0 +1,147 @@
+#include "../Destiny Definitions.txt"
+
+//Put data that needs to be pointed to here.
+KatanaBoost:
+defStatBoosts(0, 0, 0, 0, 1, 0, negateByte(1), negateByte(1))
+NaginataBoost:
+defStatBoosts(0, 0, 0, 0, 0, 0, 1, 1)
+ShurikenBoost:
+defStatBoosts(0, 0, 0, 0, 2, 0, 0, 0)
+YumiBoost:
+defStatBoosts(0, 0, 0, 0, 0, 0, 0, 2)
+
+RatSpiritBoost:
+defStatBoosts(0, 0, 0, 1, 0, 0, 0, 0)
+OxSpiritBoost:
+defStatBoosts(0, 0, 0, 0, 0, 0, 1, 0)
+TigerSpiritBoost:
+defStatBoosts(0, 0, 0, 0, 1, 0, 0, 0)
+
+DragonstoneBoost:
+defStatBoosts(0, 0, 0, negateByte(3), negateByte(2), 0, 4, 3)
+BeaststoneBoost:
+defStatBoosts(0, 0, 0, 5, 3, 0, negateByte(2), 0)
+
+ALIGN 4
+WTATable:
+defWTAAdvantage(Swords, Axes)
+defWTAAdvantage(Swords, Bows)
+
+defWTAAdvantage(Lances, Swords)
+defWTAAdvantage(Lances, Tomes)
+
+defWTAAdvantage(Axes, Lances)
+defWTAAdvantage(Axes, Shurikens)
+
+defWTAAdvantage(Tomes, Axes)
+defWTAAdvantage(Tomes, Bows)
+
+defWTAAdvantage(Shurikens, Swords)
+defWTAAdvantage(Shurikens, Tomes)
+
+defWTAAdvantage(Bows, Lances)
+defWTAAdvantage(Bows, Shurikens)
+
+endWTATable
+
+
+#define FlyingEffectiveness 0x8ADF2A
+#define HorseEffectiveness 0x8ADEE0
+#define ArmorEffectiveness 0x8ADEBB
+#define DragonEffectiveness 0x8ADF13
+#define HorseAndArmorEffectiveness 0x8ADEC2
+#define SwordfighterEffectiveness 0x8ADF57
+
+
+
+WeaponRankBonusTable:
+#define defWeaponRankBonus(mt, hit) "BYTE mt hit"
+//Weapon type 0x0 (swords)
+//S rank bonus
+defWeaponRankBonus(4,5)
+//A rank bonus
+defWeaponRankBonus(3,0)
+//B rank bonus
+defWeaponRankBonus(2,0)
+//C rank bonus
+defWeaponRankBonus(1,0)
+
+//Weapon type 0x1 (lances)
+//S rank bonus
+defWeaponRankBonus(3,10)
+//A rank bonus
+defWeaponRankBonus(2,5)
+//B rank bonus
+defWeaponRankBonus(1,5)
+//C rank bonus
+defWeaponRankBonus(1,0)
+
+//Weapon type 0x2 (axes)
+//S rank bonus
+defWeaponRankBonus(2,15)
+//A rank bonus
+defWeaponRankBonus(1,10)
+//B rank bonus
+defWeaponRankBonus(0,10)
+//C rank bonus
+defWeaponRankBonus(0,5)
+
+//Weapon type 0x3 (bows)
+//S rank bonus
+defWeaponRankBonus(3,10)
+//A rank bonus
+defWeaponRankBonus(2,5)
+//B rank bonus
+defWeaponRankBonus(1,5)
+//C rank bonus
+defWeaponRankBonus(1,0)
+
+//Weapon type 0x4 (staves)
+//S rank bonus
+defWeaponRankBonus(3,10)
+//A rank bonus
+defWeaponRankBonus(2,5)
+//B rank bonus
+defWeaponRankBonus(1,5)
+//C rank bonus
+defWeaponRankBonus(1,0)
+
+//Weapon type 0x5 (anima)
+//S rank bonus
+defWeaponRankBonus(3,10)
+//A rank bonus
+defWeaponRankBonus(2,5)
+//B rank bonus
+defWeaponRankBonus(1,5)
+//C rank bonus
+defWeaponRankBonus(1,0)
+
+//Weapon type 0x6 (light)
+//S rank bonus
+defWeaponRankBonus(4,5)
+//A rank bonus
+defWeaponRankBonus(3,0)
+//B rank bonus
+defWeaponRankBonus(2,0)
+//C rank bonus
+defWeaponRankBonus(1,0)
+
+//Weapon type 0x7 (dark)
+//S rank bonus
+defWeaponRankBonus(3,10)
+//A rank bonus
+defWeaponRankBonus(2,5)
+//B rank bonus
+defWeaponRankBonus(1,5)
+//C rank bonus
+defWeaponRankBonus(1,0)
+
+ALIGN 4
+
+WeaponDebuffTable:
+defWeaponDebuffs(0,0,0,0,0,0,0) //0x0: let 0-index entry be no debuffs.
+defWeaponDebuffs(0,0,1,1,0,2,2) //0x1: Bronze Shuriken debuff.
+defWeaponDebuffs(0,2,0,0,0,3,3) //0x2: Iron Shuriken debuff.
+defWeaponDebuffs(3,0,0,0,0,4,4) //0x3: Steel Shuriken debuff.
+defWeaponDebuffs(0,0,0,4,0,4,4) //0x4: Silver Shuriken debuff.
+defWeaponDebuffs(4,0,0,4,0,4,4) //0x5: Pebble debuff.
