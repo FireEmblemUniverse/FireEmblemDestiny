@@ -1,0 +1,15 @@
+Tables/FE8 Nightmare modules/**/*.event
+**/*.exe
+desktop.ini
+.dropbox
+Screenshots
+Event Assembler
+Mugs and Graphics/Weapon Icons/**/*.dmp
+Mugs and Graphics/*.dmp
+Maps/*.png
+*.gba
+*.sav
+*.ups
+**/*.bat
+Engine Hacks/Walking Sounds Table/*.event
+Engine Hacks/Pair Up Bonus Table/*.event
