@@ -4,7 +4,7 @@ echo on
 
 copy FE8_clean.gba "Fire Emblem Destiny.gba"
 
-c2ea
+echo: | (c2ea)
 
 cd "%~dp0Event Assembler"
 
